@@ -12,6 +12,7 @@ body, #mycontainer {
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+/*    min-width:1000px;*/
 }
 hr {
   border-color: #ffb400;
@@ -301,6 +302,7 @@ header .header-content .header-content-inner p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+     
 }
 .call-to-action h2 {
   margin: 0 auto 20px;
@@ -529,13 +531,12 @@ video#bgvid {
     font-size: 20px;
 }
 
-#about,#skills{
-    height: 100%;
+#about,#skills,#work{
+    min-height: 100%;
 }
 
 #work{
     width: 100%;
-    
 }
 
 .hover-zoom {
@@ -665,6 +666,10 @@ video#bgvid {
     color:white;
 }
 
+#about,#skills,#work,#resume{
+    display: block;
+}
+
 .skilled{
     color:white;
     line-height: 10px;
@@ -694,3 +699,27 @@ hr.seperate2{
 .ModalTitle{
     font-size:25px;
 }
+
+/* responsive table */
+@media screen and (max-width: 768px) {
+    table,
+    tbody {
+        display: block;
+        width: 100%;
+    }
+    
+     #archHeading{
+         position:absolute;
+    z-index:1;
+         
+    }
+    #archPic{
+        position:relative;
+    z-index:0;
+        
+/*        opacity: 0;*/
+    }
+    
+  
+}
+    
