@@ -75,6 +75,17 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    
+    <div id="msg" style="font-size:largest;">
+<!-- you can set whatever style you want on this -->
+Loading, please wait...
+</div>
+    <script>
+    $(document).ready(function() {
+    $('#myContainer').show();
+    $('#msg').hide();
+});
+    </script>
 <video playsinline autoplay muted loop poster="screen.jpg" id="bgvid">
     <source src="Produce.webm" type="video/webm">
     <source src="Produce.mp4" type="video/mp4">
