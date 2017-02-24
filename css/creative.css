@@ -11,6 +11,7 @@
     }
     #bgvid {
         display: none;
+        background: url('screen.jpg') no-repeat center center fixed;
     }
 }
 
