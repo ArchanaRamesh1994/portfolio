@@ -586,13 +586,19 @@ video#bgvid {
 #firstCell{
     float: right;
     background-image: url("/img/workBG.jpg");
+    margin-bottom: 25px;
+    margin-right: 50px;
 }
 
 #secondCell{
+    float: left;
     background-image: url("/img/workBG2.jpg");
+    margin-bottom: 25px;
+    margin-left: 50px;
 }
 
 #thirdCell{
+    float: right;
     background-image: url("/img/workBG4.jpg");
 }
 
@@ -601,6 +607,7 @@ video#bgvid {
 }
 
 #fifthCell{
+    float: left;
     background-image: url("/img/workBG3.jpg");
 }
 
