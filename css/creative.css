@@ -5,6 +5,15 @@
  */
 
 
+@media screen and (max-device-width: 768px) {
+    html, body, #mycontainer {
+         background: url(screen.jpg) fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
 html,
 body, #mycontainer {
   height: 100%;
@@ -479,15 +488,7 @@ video#bgvid {
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
 }
-@media screen and (max-device-width: 768px) {
-    html {
-         background: url(screen.jpg) fixed;
-    }
-    #bgvid {
-        visibility: hidden;
-        display: none;
-    }
-}
+
 #archPic {
     min-width: 350px;
     min-height: 90%;
