@@ -513,7 +513,7 @@ video#bgvid {
 @media (max-width: 768px) { 
 #archPic{
     content:url('Pic3.png');
-    margin-bottom: 25px;
+    margin-bottom: 75px;
   }
 }
 
