@@ -7,7 +7,8 @@
 
 @media screen and (max-device-width: 768px) {
     html, body, #mycontainer {
-          background: url('screen.jpg');
+        background: black;
+/*           background: url('screen.jpg'); */
     }
     #bgvid {
         display: none;
