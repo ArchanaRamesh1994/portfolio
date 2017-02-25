@@ -492,7 +492,7 @@ video#bgvid {
     background-size: cover; 
 }
 @media screen and (max-device-width: 768px) {
-    html {
+    html, body, #MainContainer {
          background: url('screen1.jpg');
     }
     #bgvid {
