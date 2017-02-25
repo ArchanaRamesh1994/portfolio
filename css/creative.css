@@ -5,15 +5,6 @@
  */
 
 
-@media screen and (max-device-width: 768px) {
-    html, body, #mycontainer {
-        background: url('screen1.jpg');
-    }
-    #bgvid {
-        display: none;
-    }
-}
-
 html,
 body, #mycontainer {
   height: 100%;
@@ -65,11 +56,13 @@ p {
     background-color: transparent;
     background-image: url("/img/bg1.png");
 */
-    bottom: 0px;
+/*    bottom: 0px;*/
+/*
     display: block;
-    height: 300px;
+    height: 100%;
     width: 100%;
     left: 0px;
+*/
 /*    background-color: crimson;*/
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153, 153, 153, 0)), color-stop(72%, rgba(0, 0, 0, 0.91)), color-stop(79%, black));
@@ -323,6 +316,16 @@ header .header-content .header-content-inner p {
   padding-right: 0;
   padding-left: 0;
 }
+/*
+#arrow{
+    background-image: url(/img/arrow.png);
+    width:50px; height:50px;
+}
+#arrow:hover{
+    background-image:url(/img/arrowHover.png);
+    width:40px; height:40px;
+}
+*/
 .btn-default {
   color: #222222;
   background-color:  #ffb400;
@@ -488,7 +491,14 @@ video#bgvid {
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
 }
-
+@media screen and (max-device-width: 768px) {
+    html {
+         background: url('screen.jpg') no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
 #archPic {
     min-width: 350px;
     min-height: 90%;
@@ -503,7 +513,6 @@ video#bgvid {
 #skills{
     
 /*    background-color: brown;*/
-    
     background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153, 153, 153, 0)), color-stop(72%, rgba(0, 0, 0, 0.91)), color-stop(79%, black));
     background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
