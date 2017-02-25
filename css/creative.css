@@ -513,6 +513,7 @@ video#bgvid {
 @media (min-width: 768px) { 
 #archPic{
     content:url('Pic3.png');
+    margin-bottom: 25px;
   }
 }
 
@@ -743,4 +744,5 @@ hr.seperate2{
     
   
 }
+    
     
