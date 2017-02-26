@@ -119,6 +119,7 @@ aside {
   font-weight: 700;
   font-size: 13px;
   color: white;
+    
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
@@ -147,7 +148,7 @@ aside {
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
-    color: white);
+    color: white;
   }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
@@ -560,6 +561,14 @@ video#bgvid {
   position: relative;
     display: inline-block;
 }
+/*
+#row1{
+    min-width:1500px;
+}
+#row2{
+    min-width:1500px;
+}
+*/
 .hover-zoom:hover {
   background-size: 600%;
 }
@@ -591,44 +600,48 @@ video#bgvid {
 }
 
 #firstCell{
-    float: right;
+/*    float: right;*/
     background-image: url("/img/workBG2.jpg");
     margin-bottom: 25px;
 /*    margin-right: 50px;*/
 }
 
 #secondCell{
-    float: none;
+/*    float: none;*/
     background-image: url("/img/workBG.jpg");
     margin-bottom: 25px;
 /*    margin-left: 50px;*/
 }
 
 #third1Cell{
-    float: left;
+/*    float: left;*/
     background-image:url("/img/workBG3rd.jpg");
     margin-bottom: 25px;
 }
 
 #thirdCell{
-    float: right;
+/*    float: right;*/
     background-image: url("/img/workBG4.jpg");
+    margin-bottom: 25px;
 }
 
 #fourthCell{
-    float: right;
+/*    float: right;*/
     background-image: url("/img/workBG5.jpg");
-    margin-right: 25px;
+/*    margin-right: 25px;*/
+    margin-bottom: 25px;
 }
 
 #fifthCell{
-    float: left;
+/*    float: left;*/
     background-image: url("/img/workBG3.jpg");
-    margin-left: 25px;
+/*    margin-left: 25px;*/
+    margin-bottom: 25px;
 }
 #sixthCell{
-    float: left;
+/*    float: left;*/
     background-image: url("/img/workBG6.jpg");
+    margin-bottom: 25px;
 }
 
 .is-blurred {
