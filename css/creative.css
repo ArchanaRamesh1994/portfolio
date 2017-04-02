@@ -64,6 +64,12 @@ p {
     left: 0px;
 */
 /*    background-color: crimson;*/
+    background: -webkit-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* Standard syntax (must be last) */
+}
+/*
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153, 153, 153, 0)), color-stop(72%, rgba(0, 0, 0, 0.91)), color-stop(79%, black));
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
@@ -72,6 +78,7 @@ p {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, #000000 79%);
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+*/
 }
 .bg-dark {
   background-color: #222222;
@@ -134,6 +141,7 @@ aside {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+
 @media (max-width: 768px) { 
   .navbar-default {
     background-color: black;
@@ -238,7 +246,7 @@ header .header-content .header-content-inner p {
 }
 .section-heading {
   margin-top: 0;
-    color:white;
+    color:  white;
 }
 .service-box {
   max-width: 400px;
@@ -521,6 +529,7 @@ video#bgvid {
 #skills{
     
 /*    background-color: brown;*/
+/*
     background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153, 153, 153, 0)), color-stop(72%, rgba(0, 0, 0, 0.91)), color-stop(79%, black));
     background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
@@ -529,6 +538,12 @@ video#bgvid {
     background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, #000000 79%);
     background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 72%, black 79%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+*/
+
+        background: -webkit-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0), black, black,  rgba(0,0,0,0)); /* Standard syntax (must be last) */
 }
 
 
@@ -544,8 +559,27 @@ video#bgvid {
     min-height: 100%;
 }
 
+#exp{
+     background: -webkit-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0), black, black, rgba(0,0,0,0)); /* Standard syntax (must be last) */
+}
+
 #work{
+    
+    background: -webkit-linear-gradient(rgba(0,0,0,0), black, black,black, rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0), black, black,black, rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0), black, black,black, rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0), black, black,black,  rgba(0,0,0,0)); /* Standard syntax (must be last) */
     width: 100%;
+}
+
+#resume{
+         background: -webkit-linear-gradient(rgba(0,0,0,0), black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0), black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0), black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0), black); /* Standard syntax (must be last) */
 }
 
 .hover-zoom {
@@ -600,33 +634,36 @@ video#bgvid {
 }
 
 #firstCell{
-/*    float: right;*/
+    float: right;
     background-image: url("/img/workBG2.jpg");
     margin-bottom: 25px;
-/*    margin-right: 50px;*/
+    margin-right: 50px;
 }
 
 #secondCell{
-/*    float: none;*/
+    float: right;
     background-image: url("/img/workBG.jpg");
     margin-bottom: 25px;
-/*    margin-left: 50px;*/
+    margin-right: 50px;
+    
 }
 
 #third1Cell{
-/*    float: left;*/
+    float: left;
     background-image:url("/img/workBG3rd.jpg");
     margin-bottom: 25px;
+    margin-left: 50px;
 }
 
 #thirdCell{
-/*    float: right;*/
+    float: left;
     background-image: url("/img/workBG4.jpg");
     margin-bottom: 25px;
+    margin-left: 50px;
 }
 
 #fourthCell{
-/*    float: right;*/
+    float: right;
     background-image: url("/img/workBG5.jpg");
 /*    margin-right: 25px;*/
     margin-bottom: 25px;
@@ -639,9 +676,34 @@ video#bgvid {
     margin-bottom: 25px;
 }
 #sixthCell{
-/*    float: left;*/
+    float: left;
     background-image: url("/img/workBG6.jpg");
     margin-bottom: 25px;
+}
+
+
+@media (max-width: 992px) { 
+#fourthCell{
+    float: right;
+    background-image: url("/img/workBG5.jpg");
+/*    margin-right: 25px;*/
+    margin-bottom: 25px;
+    margin-right: 50px;
+}
+
+#fifthCell{
+    float: left;
+    background-image: url("/img/workBG3.jpg");
+/*    margin-left: 25px;*/
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+#sixthCell{
+    float: none;
+    background-image: url("/img/workBG6.jpg");
+    margin-bottom: 25px;
+}
+
 }
 
 .is-blurred {
@@ -682,12 +744,12 @@ video#bgvid {
   .Modal-content {
       color:white;
     background-color: black;
-      background:rgba(0,0,0,0.6);
+      background:rgba(0,0,0,0.8);
     margin: auto;
     padding: 20px;
     border-radius: 4px;
     max-width: 800px;
-    height: 600px; }
+    height: fit-content(100%); }
   .ModalOpen {
     overflow: hidden; }
 
@@ -716,6 +778,7 @@ video#bgvid {
 
 #about,#skills,#work,#resume{
     display: block;
+    
 }
 
 .skilled{
