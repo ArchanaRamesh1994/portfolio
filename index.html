@@ -59,6 +59,9 @@
                         <a class="page-scroll" href="#skills">Skills</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#exp">Experience</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#work">My Work</a>
                     </li>
                     <li>
@@ -273,9 +276,11 @@ var bar4 = new ProgressBar.Circle(circle4, {
         verticalScroll = document.querySelector(".verticalScroll");
         picture=document.getElementById("archPic")
         if(parseInt(top)>10){
+            document.getElementById("mainNav").style.background="rgba(0, 0, 0, 0.8)";
             document.getElementById("archPic").src="Pic1.png";
         }
         else{
+            document.getElementById("mainNav").style.background="transparent";
             document.getElementById("archPic").src="Pic.png";
         }
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -298,8 +303,39 @@ var bar4 = new ProgressBar.Circle(circle4, {
     
         </script>
     
+    <section id="exp">
+        
+<div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 id="skillHeading" class="section-heading">EXPERIENCE</h2>
+                    <hr class="primary">
+                </div>
+            </div>
     
-    <section class="no-padding" id="work">
+    <div id= "row1" class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <div id="firstCell" class="hover-zoom">
+                  <div id="insiderBox">
+                      <center><h2><b>INTERN</b></h2>at<h3>National Aerospace Laboratories</h3><hr class="seperate2"><h3>Surface Defect Detection on Aircraft Structures using Image Processing</h3><div class="readMore"><u><a>Read more</a></u></div></center>
+        </div>
+
+                </div>
+        </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div id="thirdCell" class="hover-zoom">
+                  <div id="insiderBox">
+                      <center><h2><b>INTERN</b></h2>at<h3>Indian Institute of Science</h3><hr class="seperate2"><h3>Android Application for Ultrasonic based Testing</h3><div class="readMore"><u><a>Read more</a></u></div></center> </div>
+
+                </div>
+                </div>
+    
+        </div>
+        </div>
+    </section>
+        
+        
+    <section id="work">
 <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -310,25 +346,18 @@ var bar4 = new ProgressBar.Circle(circle4, {
     
     
     <div id= "row1" class="row">
-                <div class="col-xs-12 col-lg-4">
-                    <div id="firstCell" class="hover-zoom">
-                  <div id="insiderBox">
-                      <center><h2><b>INTERN</b></h2>at<h3>National Aerospace Laboratories</h3><hr class="seperate2"><h3>Surface Defect Detection on Aircraft Structures using Image Processing</h3><div class="readMore"><u><a>Read more</a></u></div></center>
-        </div>
-
-                </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-4">
+                
+                <div class="col-xs-12 col-sm-6 col-lg-6">
                     <div id="secondCell" class="hover-zoom">
                   <div id="insiderBox">
                       <center><h2><b>PROJECT</b></h2>at<h3>Rochester Institute of Technology</h3><hr class="seperate2"><h3>Usability Testing on Bergen Swamp Preservation Society website</h3><div class="readMore"><u><a>Read more</a></u></div></center> </div>
 
                 </div>
                 </div>
-        <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="col-xs-12 col-sm-6 col-lg-6">
                     <div id="third1Cell" class="hover-zoom">
                   <div id="insiderBox">
-                      <center><h2><b>PROJECT</b></h2>at<h3>Rochester Institute of Technology</h3><hr class="seperate2"><h3>Application to suggest Clothing based on the Weather</h3><div class="readMore"><u><a>Read more</a></u></div></center> </div>
+                      <center><h2><b>PROJECT</b></h2>at<h3>Rochester Institute of Technology</h3><hr class="seperate2"><h3>Project <br>-<br> Accoutre</h3><div class="readMore"><u><a>Read more</a></u></div></center> </div>
 
                 </div>
                 </div>
@@ -337,14 +366,8 @@ var bar4 = new ProgressBar.Circle(circle4, {
         
                   <div  id= "row2" class="row">
   
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <div id="thirdCell" class="hover-zoom">
-                  <div id="insiderBox">
-                      <center><h2><b>INTERN</b></h2>at<h3>Indian Institute of Science</h3><hr class="seperate2"><h3>Android Application for Ultrasonic based Testing</h3><div class="readMore"><u><a>Read more</a></u></div></center> </div>
-
-                </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3">
+               
+                <div class="col-xs-12 col-sm-6 col-lg-4">
                     <div id="fourthCell" class="hover-zoom">
                   <div id="insiderBox">
 
@@ -353,17 +376,17 @@ var bar4 = new ProgressBar.Circle(circle4, {
 
                 </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-lg-3">
+                <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div id="fifthCell" class="hover-zoom">
                   <div id="insiderBox">
 
-                      <center><h2><b>PROJECT</b></h2>at<h3>R. V. College of Engineering, Bangalore</h3>
-        <hr class="seperate2"><h3>Android Quiz Application</h3><div class="readMore"><u><a>Read more</a></u></div></center></div>
+                      <center><h2><b>PROJECT</b></h2>at<h3>Rochester Institute of Technology</h3>
+        <hr class="seperate2"><h3>Google Maps Study</h3><div class="readMore"><u><a>Read more</a></u></div></center></div>
 
                 </div>
                 </div>
         
-        <div class="col-xs-12 col-sm-6 col-lg-3">
+        <div class="col-xs-12 col-sm-12 col-lg-4">
                 <div id="sixthCell" class="hover-zoom">
                   <div id="insiderBox">
     
@@ -409,26 +432,41 @@ var bar4 = new ProgressBar.Circle(circle4, {
                 <p class="ModalHead">Intern - National Aerospace Labotories</p>
                 <p class="ModalTitle">Surface defect detection on Aircraft structures using Image Processing</p>
                 <img src="img/proj1.png" style="width:100%; height:auto;"><br><br>
-                <p>Developed this project in Matlab and designed its front end. Pictures of the dents with three diﬀerent phase angles were taken and these pictures were ﬁltered, phase wrapped, phase unwrapped and height mapped to output the height of the dent. Won the best project award out of 70 projects in Information Science Department of R. V. College of Engineering. Soon a research paper is going to be published on this topic. </p>
+                <p><b>Problem:</b> The present method employed for dent detection on aircraft structures is visual inspection. An inspector goes to the aircraft, inspects it visually for surface defects like dents, cracks etc. There could be many issues which are related to visual inspection such as human error, unfavorable weather conditions, safety of the inspector etc.<br><br>
+                    <b>Solution:</b> To avoid these problems, it is necessary to automate the system for surface defect detection on aircraft structures.
+                    3D reconstruction of the surface under inspection can help in detecting the defects easily. Out of different 3D reconstruction methods, phase-shift profilometry is used in this project. 3 phase shifted sinusoidal patterns with phase shift of 120 ̊ are generated and a projector projects these patterns onto the surface of the test object. After this, phase wrapping, back ground removal, phase unwrapping and height mapping is done. This method also prevents edges from getting detected as dents. <br><br>
+                    <b>Results:</b> It is found that the scheme is capable of detecting dent/irregularities of size ~0.5mm. Out of 5 different laminates used in the study with dent depths (0.84 mm to 6.15mm) the system estimated the dent depths with considerable accuracy (0.014mm to 0.2mm) at 700mm distance. The background removal algorithm developed, made the estimations very fast and accurate. 
+                </p>
             </div>
         </div>
         <div id="myModal31" class="Modal is-hidden is-visuallyHidden">
             <!-- Modal content -->
             <div class="Modal-content">
                 <span id="closeModal31" class="Close">&times;</span>
-                <p class="ModalHead">Project (In Progress)</p>
-                <p class="ModalTitle">Application to suggest Clothing based on the Weather</p><br><br>
-                <p>A prototype of Clothing app is being designed in the User Centered Design course which will suggest clothing based on several factors such as weather, fashion trends and so on.<br>(In Progress) </p>
+                <p class="ModalHead">Project</p>
+                <p class="ModalTitle">Application to suggest Clothing based on the Weather</p><br>
+                <img src="img/affinity.jpg" style="width:100%; height:auto;"><br><br>
+                <p><b>Objective/ Problem Statement:</b> To build an app that would assist people to choose clothing based on the weather conditions and fashion trends.<br>
+<br>
+                    <b>Problem Statement:</b> To build the prototype of the proposed app above, we have done contextual inquiry, built the flow, sequence, artifact, culture, physical model  and consolidated sequence models and also made the affinity diagram. The next step would be creating scenarios, story boarding, wire framing and then prototyping.<br><br>
+
+                    <b>Stakeholders:</b> People from teens to 60+ are our target audience.<br><br>
+                    <b>Proposed features:</b><br>
+                    1. The user would have to feed all the cloths into the app over time.<br>
+                    2. The app every morning would then look at the weather and the calender for the events for the day.<br>
+                    3. The app would make suggestions of the clothes the person should wear based on the input the person has fed into the database over time.<br>
+                    4. The app would also look at the fashion trends given by the vendors and make suggestions to the person which he could purchase online from the vendors.<br>
+</p>
             </div>
         </div>
         <div id="myModal2" class="Modal is-hidden is-visuallyHidden">
             <!-- Modal content -->
             <div class="Modal-content">
                 <span id="closeModal2" class="Close">&times;</span>
-                <p class="ModalHead">Project (In Progress)</p>
+                <p class="ModalHead">Project</p>
                 <p class="ModalTitle">Usability Testing on Bergen Swamp Preservation Society website</p>
                 <img src="img/proj6.png" style="width:100%; height:auto;"><br><br>
-                <p>Usability Testing is being done on the Bergen Swamp Preservation Society Website in order to improve the User Experience. Currently, we are done with the stage where heuristic evaluations are performed. Some of the next tasks that will be performed are Task design, Task list development, etc. <br></p>
+                <p>Collaborated with Bergen swamp preservation society to perform usability testing on their website. The main objective here is to perform usability tests to spot usability issues in the website.  It is to spot problems in the website, evaluate the features  that need improvement, features that are working and the missing features, analyze the interaction behaviors and complete user experience. Heuristic evaluations were done post which screeners and flyers were printed and a test plan was created. We are currently in the stage of recruiting participants and performing the usability testing. <br></p>
             </div>
         </div>
     
@@ -439,7 +477,29 @@ var bar4 = new ProgressBar.Circle(circle4, {
                 <p class="ModalHead">Intern - Indian Institute of Science</p>
                 <p class="ModalTitle">Android Application for Ultrasonic based Testing </p>
                 <center><img src="img/proj2.png" style="width:50%; height:auto;"></center><br>
-                <p>Developed an Android app, and designed its front end, that took diﬀerent Data samples for diﬀerent kinds of signals as inputs and generated graphs indicating the distribution of the sample for each of these signals.</p>
+                <p>Developed an Android app, and designed its front end, that took diﬀerent Data samples for diﬀerent kinds of signals as inputs and generated graphs indicating the distribution of the sample for each of these signals.<br><br>
+                    <b>Functional features:</b><br>
+1. In the transmitter part, there is AM wave generation where using equations the AM wave is generated using input values such as Amplitude, Sampling rate ,frequency and signal type.<br>
+2. The other functionality is generation of continuous wave using input parameters such as amplitude, sampling rate, time duration.<br>
+AM equation : Am*sin(2*PI*frequency*t)*(1-cos((2*PI*(frequency/5)*t))+offset,<br>
+and for continuous sine wave<br>
+Am*sin(2*PI*frequency*t) + offset,<br>
+where,<br>
+Am : Amplitude of the carrier,<br>
+frequency: Carrier frequency,<br>
+frequency/5: message frequency is assumed to be one fifth of the carrier frequency,<br>
+offset: is equal to the amplitude. This shifts the entire wave upwards so as to not allow the signal take negative values.<br>
+3. In the receiver part, when the data is loaded, there is FFT graph generation using Tuckis algorithm.<br><br>
+
+                    <b>Process flow:</b><br>
+1. In the transmitter part,<br>
+a. First the amplitude must be entered, and then the sampling rate. based on the sampling rate, the frequency range is given based on which the frequency has to be selected. Now if AM signal type is chosen, the AM wave will be generated.<br>
+b. Now with the same parameters, if time duration is entered continuous wave is generated.<br> <br>
+2. In the receiver part,<br>
+a. By loading data, the graph for the data file is generated.<br>
+Now for the same data ,FFT is generated.<br>
+b. Features for future development of Filters have also been kept. <br>
+</p>
             </div>
         </div>
     
@@ -450,7 +510,7 @@ var bar4 = new ProgressBar.Circle(circle4, {
                 <p class="ModalHead">Project</p>
                 <p class="ModalTitle">Course Outcome Mapping</p>
                 <center><img src="img/proj3.png" style="width:100%; height:auto;"></center><br>
-                <p>Designed and developed a web application for the course outcome mapping system in R. V. College of Enginering, Bangalore. Each course had outcomes, and the scores students obtain in the tests and exams were mapped to these course outcomes. The overall percentage of each student was compared to all the other students for each course outcome to determine how successful the student was in fulﬁling that course outcome. This also helped in updating the courses in future.</p>
+                <p>Designed and developed a web application for the course outcome mapping system in R. V. College of Enginering, Bangalore. The student portfolio includes marks, attendance, certificates, tuition, grade point averages and other relevant information. The Course Outcome Mapping System performs this batch segregation and assists the counsellors in tracking the performance of students with respect to marks, attendance and extracurricular activities. The Course Outcome Mapping System also enables the parents to keep track of the performance of their wards and interact with counselors personally using the appointment scheduler included in the portal. </p>
             </div>
         </div>
     <div id="myModal5" class="Modal is-hidden is-visuallyHidden">
@@ -458,9 +518,9 @@ var bar4 = new ProgressBar.Circle(circle4, {
             <div class="Modal-content">
                 <span id="closeModal5" class="Close">&times;</span>
                 <p class="ModalHead">Project</p>
-                <p class="ModalTitle">Android Quiz Application</p>
-                <center><img src="img/proj4.png" style="width:50%; height:auto;"></center><br>
-                <p>Developed an Android application, for the ‘Mobile Application Development’ course in Undergrad, which asked the users some general knowledge questions and displayed the ﬁnal score based on their answers.</p>
+                <p class="ModalTitle">Google Maps Study</p>
+                <center><img src="img/map.png" style="width:100%; height:auto;"></center><br>
+                <p>Observed users use google maps and analyzed the problems faced by them with the user interface. This was done by conducting field observations and contextual inquiry and by conducting interviews. We are currently at the stage of persona creation, storyboarding and heuristic evaluations. Post this we will suggest possible solutions through wireframes to the problems faced by the people based on information from the persona creation, design scenarios and story boarding.</p>
             </div>
         </div>
     <div id="myModal6" class="Modal is-hidden is-visuallyHidden">
