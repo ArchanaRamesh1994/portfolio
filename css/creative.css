@@ -742,6 +742,10 @@ video#bgvid {
   transition: all 0.3s linear; }
 
   .Modal-content {
+      
+/*      #ff7e00 #ffb400*/
+      border:5px solid #ff7e00;
+      
       color:white;
     background-color: black;
       background:rgba(0,0,0,0.8);
