@@ -31,7 +31,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+    <link href="css/rotating-card.css" rel="stylesheet">
     
     <script src="js/progressbar.js"></script>
     <script src="js/progressbar.min.js"></script>
@@ -133,25 +133,25 @@ During my bachelors, I participated in many voluntary activities, the most notew
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <div id="circle1"></div>
-                        <h3 class="skilled">HTML<hr class="seperate">CSS<hr class="seperate">XML</h3>
+                        <h3 class="skilled">HTML<hr class="seperate">CSS<hr class="seperate">Javascript</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box"> 
                         <div id="circle2"></div>
-                        <h3 class="skilled">JavaScript<hr class="seperate">Java<hr class="seperate">mongoDB<hr class="seperate">neo4j</h3>
+                        <h3 class="skilled">Photoshop<hr class="seperate">Balsamic<hr class="seperate">Mockplus<hr class="seperate">Axure</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <div id="circle3"></div>
-                        <h3 class="skilled">MySQL<hr class="seperate">C<hr class="seperate">C++</h3>
+                        <h3 class="skilled">MySQL<hr class="seperate">Java<hr class="seperate">Marvel<hr class="seperate"> NOSQL</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <div id="circle4"></div>
-                        <h3 class="skilled">JQuery<hr class="seperate">Photoshop<hr class="seperate">Illustrator<hr class="seperate">Invision<hr class="seperate">AngularJS</h3>
+                        <h3 class="skilled">JQuery<hr class="seperate">Illustrator<hr class="seperate">Invision
                     </div>
                 </div>
             </div>
@@ -301,9 +301,25 @@ var bar4 = new ProgressBar.Circle(circle4, {
 }, false);
     
     
+    
+$().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+
+    });
+
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
         </script>
     
     <section id="exp">
+<!--
         
 <div class="container-fluid">
             <div class="row">
@@ -332,6 +348,84 @@ var bar4 = new ProgressBar.Circle(circle4, {
     
         </div>
         </div>
+-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">EXPERIENCE</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+      <div id="expCards" class="row">
+         <div class="col-lg-4 col-md-6 text-center">
+             <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/InternMagic-icon.png" />
+                        </div>
+                        <p class="name">Pearit<br><br></p>
+                        <p class="profession">UX Design Intern</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">May 2017 - August 2017</h5>
+                        <img id="pearIt" class="cardBackImg" src="images/InternMagic-title.png" />
+                                <p class="backCardText text-center">I worked on designing the wireframes and developing the prototypes for their website - Intern magic. The pages I worked on for Intern magic included its home page, the student/ employee profile page and the employer profile page, the premium account signup page.  </p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+          
+        <div class="col-lg-4 col-md-6 text-center">
+             <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/NAL-Title.png" />
+                            </div>
+                        <p class="name">National Aerospace<br> Labotories</p>
+                        <p class="profession">Intern</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">January 2016 - May 2016</h5>
+                        
+                        <img class="cardBackImg" src="images/NAL-Aircraft.png" />
+                                <p class="backCardText text-center">The aim of this project was to detect dents on aircraft structures and also estimate the depth of it. Pictures of the dents with three different phase angles were taken and using Matlab these pictures were filtered, phase wrapped, phase unwrapped and height mapped to output the height of the dent. Won the best project award out of 70 projects in Information Science Department of R. V. College of Engineering. A research paper is published on this topic.   </p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+        <div class="col-lg-4 col-md-6 text-center">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/IISC-Title.png" />
+                        </div>
+                        <p class="name">Indian Institute of Science<br><br></p>
+                        <p class="profession">Intern</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">January 2015 - July 2015</h5>
+                        <img class="cardBackImg" src="images/IISC-Back.png" />
+                                <p class="backCardText text-center">Developed an Android app and designed its front end along with the Business requirement document. It took different Data samples for different kinds of signals as inputs and generated graphs indicating the distribution of the sample for each of these signals.</p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+               </div>
     </section>
         
         
@@ -344,64 +438,158 @@ var bar4 = new ProgressBar.Circle(circle4, {
                 </div>
             </div>
     
+    <div id="expCards" class="row">
+         <div class="col-lg-4 col-md-6 text-center">
+             <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/BergenSwamp-Title.png" />
+                        </div>
+                        <p class="name">Usability Testing - Bergen Swamp Preservation Society<br><br></p>
+                        <p class="profession">Project at RIT</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">February 2017 - May 2017</h5>
+                        <img class="cardBackImg" src="images/BergenSwamp-Website.png" />
+                                <p class="backCardText text-center">Collaborated with Bergen swamp preservation society to perform usability testing on their website. Our task was to spot problems in the website, evaluate the features that need improvement, features that are not working and the missing features, analyze the interaction behaviors and complete user experience. Heuristic evaluations were done post which screeners and flyers were printed, participants were recruited and a test plan was created. Usability testing was performed by creating tasks and asking participants to perform them and finally the results were interpreted.</p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+          
+        <div class="col-lg-4 col-md-6 text-center">
+             <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/UCD-title.png" />
+                            </div>
+                        <p class="name">Accoutre</p>
+                        <p class="profession"><br><br>Project at RIT</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">February 2017 - May 2017</h5>
+                        
+                        <img class="cardBackImg" src="images/UCD-interview.png" />
+                                <p class="backCardText text-center">Designing an app that would assist people to choose clothing based on the weather condions and fashion trends. The project involves contextual inquiry, building the flow and sequence diagrams, artifact, culture, physical and consolidated sequence models and also making the affinity diagram. Low fidelity and hi fidelity prototypes were also made along with story boarding.</p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+        <div class="col-lg-4 col-md-6 text-center">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/maps-title.png" />
+                        </div>
+                        <p class="name">Google Maps Study<br><br></p>
+                        <p class="profession"><br>Project at RIT</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">February 2017 - May 2017</h5>
+                        <img class="cardBackImg" src="images/Maps-Problem3.png" />
+                                <p class="backCardText text-center">In this study, our group observed users using google maps and analyzed the problems faced by them with the user interface. This was done by conducing field observations and contextual inquiry and by conducing interviews. Post this was the stage of creating persona, story boarding and heuristic evaluations. Finally we will suggested possible solutions through wireframes and prototypes to the problems faced by the people based on information from the persona creation, design scenarios and story boarding.</p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+               </div>
     
-    <div id= "row1" class="row">
-                
-                <div class="col-xs-12 col-sm-6 col-lg-6">
-                    <div id="secondCell" class="hover-zoom">
-                  <div id="insiderBox">
-                      <center><h2><b>PROJECT</b></h2>at<h3>Rochester Institute of Technology</h3><hr class="seperate2"><h3>Usability Testing on Bergen Swamp Preservation Society website</h3><div class="readMore"><u><a>Read more</a></u></div></center> </div>
-
-                </div>
-                </div>
-        <div class="col-xs-12 col-sm-6 col-lg-6">
-                    <div id="third1Cell" class="hover-zoom">
-                  <div id="insiderBox">
-                      <center><h2><b>PROJECT</b></h2>at<h3>Rochester Institute of Technology</h3><hr class="seperate2"><h3>Project <br>-<br> Accoutre</h3><div class="readMore"><u><a>Read more</a></u></div></center> </div>
-
-                </div>
-                </div>
-    </div>
-        
-        
-                  <div  id= "row2" class="row">
-  
-               
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                    <div id="fourthCell" class="hover-zoom">
-                  <div id="insiderBox">
-
-                    <center><h2><b>PROJECT</b></h2>at<h3>R. V. College of Engineering, Bangalore</h3>
-                        <hr class="seperate2"><h3>Course Outcome Mapping</h3><div class="readMore"><u><a>Read more</a></u></div></center></div>
-
-                </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div id="fifthCell" class="hover-zoom">
-                  <div id="insiderBox">
-
-                      <center><h2><b>PROJECT</b></h2>at<h3>Rochester Institute of Technology</h3>
-        <hr class="seperate2"><h3>Google Maps Study</h3><div class="readMore"><u><a>Read more</a></u></div></center></div>
-
-                </div>
-                </div>
-        
-        <div class="col-xs-12 col-sm-12 col-lg-4">
-                <div id="sixthCell" class="hover-zoom">
-                  <div id="insiderBox">
     
-                      <center><h2><b>PROJECT</b></h2>at<h3>Rochester Institute of Technology</h3>
-                      <hr class="seperate2"><h3>Twitter<br> Project</h3><div class="readMore"><u><a>Read more</a></u></div></center></div>
+    <div id="expCards" class="row">
+         <div class="col-lg-4 col-md-6 text-center">
+             <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        
+                        <div class="cardImgContainer">
+                        <img id="EZPassImg" class="cardFrontImg" src="images/EZ-title.png" />
+                        </div>
+                        <p class="name">Heuristic Evaluation of Official Website for Virginia’s EZ Pass System<br><br></p>
+                        <p class="profession">Project at RIT</p>
 
-                </div>
-                </div>
-            </div>
-    
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">February 2017 - May 2017</h5>
+                        <img class="cardBackImg" src="images/EZ-website.png" />
+                                <p class="backCardText text-center">The Aim of the project was to find a system and do a heuristic evaluation of the website. All of us first discussed to see which was the website are we going to study and after a lot of discussion, we decided to study, the official website for Virginia’s EZ Pass.
+We all first performed heuristic evaluations individually to identify the usability and accessibility
+issues in the website. Once this was done, we all sat and discussed each of our heuristic evaluations and came up
+with a document which was a compilation of all of the problems we found with the website. A
+total of 27 usability and accessibility issues was found with the website.</p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+          
+        <div class="col-lg-4 col-md-6 text-center">
+             <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/Twitter-title.png" />
+                            </div>
+                        <p class="name">Twitter Project</p>
+                        <p class="profession"><br><br>Project at RIT</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">October 2016 - December 2016</h5>
+                        
+                        <img class="cardBackImg" src="images/Twitter-search.png" />
+                                <p class="backCardText text-center">This application was developed, for the course 
+‘Knowledge Representation Technologies’ in Grad school, using Java Swing and MongoDB. 
+It fetched records of customers from a twitter database related to a given input keyword.</p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+        <div class="col-lg-4 col-md-6 text-center">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/Course-title.png" />
+                        </div>
+                        <p class="name">Course Outcome Mapping<br></p>
+                        <p class="profession"><br>Project at R. V. College of Engineering</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">January 2015 - May 2015</h5>
+                        <img class="cardBackImg" src="images/Maps-Problem3.png" />
+                                <p class="backCardText text-center">Designed and developed a web application for the course 
+outcome mapping system in R. V. College of Enginering, Bangalore. Each course had outcomes, and the scores students obtain in the tests and exams were mapped to these course outcomes. 
+The overall percentage of each student was compared to all the other students for each course outcome to determine how 
+successful the student was in fulfiling that course outcome. 
+This also helped in updating the courses in future. Backend: MySQL
+Front End: Html, CSS, Javascript, Bootstrap, Ajax and JQuery</p>
+
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+               </div>
         </div>
-        </div>
-    </section>
-
-    <section id="resume">
+        </section>
+       <section id="resume">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -421,120 +609,10 @@ var bar4 = new ProgressBar.Circle(circle4, {
             </div>
         </div>
     </section>
+        </section>
 </main>
 
     
-  <!-- Modal container it includes the overlay -->
-        <div id="myModal1" class="Modal is-hidden is-visuallyHidden">
-            <!-- Modal content -->
-            <div class="Modal-content">
-                <span id="closeModal1" class="Close">&times;</span>
-                <p class="ModalHead">Intern - National Aerospace Labotories</p>
-                <p class="ModalTitle">Surface defect detection on Aircraft structures using Image Processing</p>
-                <img src="img/proj1.png" style="width:100%; height:auto;"><br><br>
-                <p><b>Problem:</b> The present method employed for dent detection on aircraft structures is visual inspection. An inspector goes to the aircraft, inspects it visually for surface defects like dents, cracks etc. There could be many issues which are related to visual inspection such as human error, unfavorable weather conditions, safety of the inspector etc.<br><br>
-                    <b>Solution:</b> To avoid these problems, it is necessary to automate the system for surface defect detection on aircraft structures.
-                    3D reconstruction of the surface under inspection can help in detecting the defects easily. Out of different 3D reconstruction methods, phase-shift profilometry is used in this project. 3 phase shifted sinusoidal patterns with phase shift of 120 ̊ are generated and a projector projects these patterns onto the surface of the test object. After this, phase wrapping, back ground removal, phase unwrapping and height mapping is done. This method also prevents edges from getting detected as dents. <br><br>
-                    <b>Results:</b> It is found that the scheme is capable of detecting dent/irregularities of size ~0.5mm. Out of 5 different laminates used in the study with dent depths (0.84 mm to 6.15mm) the system estimated the dent depths with considerable accuracy (0.014mm to 0.2mm) at 700mm distance. The background removal algorithm developed, made the estimations very fast and accurate. 
-                </p>
-            </div>
-        </div>
-        <div id="myModal31" class="Modal is-hidden is-visuallyHidden">
-            <!-- Modal content -->
-            <div class="Modal-content">
-                <span id="closeModal31" class="Close">&times;</span>
-                <p class="ModalHead">Project</p>
-                <p class="ModalTitle">Application to suggest Clothing based on the Weather</p><br>
-                <img src="img/affinity.jpg" style="width:100%; height:auto;"><br><br>
-                <p><b>Objective/ Problem Statement:</b> To build an app that would assist people to choose clothing based on the weather conditions and fashion trends.<br>
-<br>
-                    <b>Problem Statement:</b> To build the prototype of the proposed app above, we have done contextual inquiry, built the flow, sequence, artifact, culture, physical model  and consolidated sequence models and also made the affinity diagram. The next step would be creating scenarios, story boarding, wire framing and then prototyping.<br><br>
-
-                    <b>Stakeholders:</b> People from teens to 60+ are our target audience.<br><br>
-                    <b>Proposed features:</b><br>
-                    1. The user would have to feed all the cloths into the app over time.<br>
-                    2. The app every morning would then look at the weather and the calender for the events for the day.<br>
-                    3. The app would make suggestions of the clothes the person should wear based on the input the person has fed into the database over time.<br>
-                    4. The app would also look at the fashion trends given by the vendors and make suggestions to the person which he could purchase online from the vendors.<br>
-</p>
-            </div>
-        </div>
-        <div id="myModal2" class="Modal is-hidden is-visuallyHidden">
-            <!-- Modal content -->
-            <div class="Modal-content">
-                <span id="closeModal2" class="Close">&times;</span>
-                <p class="ModalHead">Project</p>
-                <p class="ModalTitle">Usability Testing on Bergen Swamp Preservation Society website</p>
-                <img src="img/proj6.png" style="width:100%; height:auto;"><br><br>
-                <p>Collaborated with Bergen swamp preservation society to perform usability testing on their website. The main objective here is to perform usability tests to spot usability issues in the website.  It is to spot problems in the website, evaluate the features  that need improvement, features that are working and the missing features, analyze the interaction behaviors and complete user experience. Heuristic evaluations were done post which screeners and flyers were printed and a test plan was created. We are currently in the stage of recruiting participants and performing the usability testing. <br></p>
-            </div>
-        </div>
-    
-        <div id="myModal3" class="Modal is-hidden is-visuallyHidden">
-            <!-- Modal content -->
-            <div class="Modal-content">
-                <span id="closeModal3" class="Close">&times;</span>
-                <p class="ModalHead">Intern - Indian Institute of Science</p>
-                <p class="ModalTitle">Android Application for Ultrasonic based Testing </p>
-                <center><img src="img/proj2.png" style="width:50%; height:auto;"></center><br>
-                <p>Developed an Android app, and designed its front end, that took diﬀerent Data samples for diﬀerent kinds of signals as inputs and generated graphs indicating the distribution of the sample for each of these signals.<br><br>
-                    <b>Functional features:</b><br>
-1. In the transmitter part, there is AM wave generation where using equations the AM wave is generated using input values such as Amplitude, Sampling rate ,frequency and signal type.<br>
-2. The other functionality is generation of continuous wave using input parameters such as amplitude, sampling rate, time duration.<br>
-AM equation : Am*sin(2*PI*frequency*t)*(1-cos((2*PI*(frequency/5)*t))+offset,<br>
-and for continuous sine wave<br>
-Am*sin(2*PI*frequency*t) + offset,<br>
-where,<br>
-Am : Amplitude of the carrier,<br>
-frequency: Carrier frequency,<br>
-frequency/5: message frequency is assumed to be one fifth of the carrier frequency,<br>
-offset: is equal to the amplitude. This shifts the entire wave upwards so as to not allow the signal take negative values.<br>
-3. In the receiver part, when the data is loaded, there is FFT graph generation using Tuckis algorithm.<br><br>
-
-                    <b>Process flow:</b><br>
-1. In the transmitter part,<br>
-a. First the amplitude must be entered, and then the sampling rate. based on the sampling rate, the frequency range is given based on which the frequency has to be selected. Now if AM signal type is chosen, the AM wave will be generated.<br>
-b. Now with the same parameters, if time duration is entered continuous wave is generated.<br> <br>
-2. In the receiver part,<br>
-a. By loading data, the graph for the data file is generated.<br>
-Now for the same data ,FFT is generated.<br>
-b. Features for future development of Filters have also been kept. <br>
-</p>
-            </div>
-        </div>
-    
-<div id="myModal4" class="Modal is-hidden is-visuallyHidden">
-            <!-- Modal content -->
-            <div class="Modal-content">
-                <span id="closeModal4" class="Close">&times;</span>
-                <p class="ModalHead">Project</p>
-                <p class="ModalTitle">Course Outcome Mapping</p>
-                <center><img src="img/proj3.png" style="width:100%; height:auto;"></center><br>
-                <p>Designed and developed a web application for the course outcome mapping system in R. V. College of Enginering, Bangalore. The student portfolio includes marks, attendance, certificates, tuition, grade point averages and other relevant information. The Course Outcome Mapping System performs this batch segregation and assists the counsellors in tracking the performance of students with respect to marks, attendance and extracurricular activities. The Course Outcome Mapping System also enables the parents to keep track of the performance of their wards and interact with counselors personally using the appointment scheduler included in the portal. </p>
-            </div>
-        </div>
-    <div id="myModal5" class="Modal is-hidden is-visuallyHidden">
-            <!-- Modal content -->
-            <div class="Modal-content">
-                <span id="closeModal5" class="Close">&times;</span>
-                <p class="ModalHead">Project</p>
-                <p class="ModalTitle">Google Maps Study</p>
-                <center><img src="img/map.png" style="width:100%; height:auto;"></center><br>
-                <p>Observed users use google maps and analyzed the problems faced by them with the user interface. This was done by conducting field observations and contextual inquiry and by conducting interviews. We are currently at the stage of persona creation, storyboarding and heuristic evaluations. Post this we will suggest possible solutions through wireframes to the problems faced by the people based on information from the persona creation, design scenarios and story boarding.</p>
-            </div>
-        </div>
-    <div id="myModal6" class="Modal is-hidden is-visuallyHidden">
-            <!-- Modal content -->
-            <div class="Modal-content">
-                <span id="closeModal6" class="Close">&times;</span>
-                <p class="ModalHead">Project</p>
-                <p class="ModalTitle">Twitter Project</p>
-                <center><img src="img/proj5.jpg" style="width:50%; height:auto;"></center><br>
-                <p> This application was developed, for the course ‘Knowledge Representation Technologies’ in Grad school, using Java Swing and MongoDB. It fetched records of customers from a twitter database related to a given input keyword</p>
-            </div>
-        </div>
-
-
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -547,6 +625,7 @@ b. Features for future development of Filters have also been kept. <br>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Theme JavaScript -->
+    <script src="plugins/jquery-3.2.1.min.js"></script>
     <script src="js/creative.js"></script>
 <script src="js/app.js"></script>
     </body>

@@ -846,4 +846,37 @@ hr.seperate2{
 }
 
     
+
+#expCards{
+    margin: 2%;
+}
+
+.cardFrontImg {
+    width: 75%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.cardImgContainer{
+    height: 60%;
+}
+#pearIt{
+    width: 80%;
+    margin-top: 5%;
+}
+.cardBackImg {
+    width: 50%;
+}
+
+.backCardText {
+    margin: 2%;
+}
+
+.projImg{
+    width: 80%;
+}
+
+#EZPassImg {
+    margin-top: 30%;
+    height: 30%;
+}
     

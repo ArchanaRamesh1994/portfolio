@@ -1,0 +1,40 @@
+.center {
+    width:60%;
+    margin:auto;
+    text-align: center;
+}
+
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+/*    min-width:1000px;*/
+}
+
+.title{
+    margin-bottom: 50px;
+}
+
+.pagelogo{
+    width:60%;
+}
+
+.imgtd{
+    width: 60%;
+}
+
+.txttd{
+    width:40%;
+}
+.picimg{
+    width: 20%;
+}
+
+.left-float{
+    float:left;
+}
+.right-float{
+    float:right;
+}
+
+.div{
+    position: absolute;
+}
