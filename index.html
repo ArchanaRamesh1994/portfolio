@@ -1,133 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<title>Archana Ramesh - Portfolio</title> 
+	<meta name="description" content="BlackTie.co - Free Handsome Bootstrap Themes" />	    
+	<meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">
+	<meta property="og:title" content="">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Archana Ramesh Portfolio</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/creative.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link href="css/rotating-card.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" href="jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+<!--    <link rel="stylesheet" href="font-awesome.min.css" rel="stylesheet">-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery-ui.structure.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery-ui.theme.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	
+	<link rel="prefetch" href="zoom.png">
     
-    <script src="js/progressbar.js"></script>
-    <script src="js/progressbar.min.js"></script>
+    <link href="myCss.css" rel="stylesheet" />
+    <link href="rotating-card.css" rel="stylesheet" />
+    <link rel="stylesheet" href="magic.css">
+    <link rel="stylesheet" href="animate.css">
+		
 </head>
 
-<body id="page-top">
-    
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Archana Ramesh</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#exp">Experience</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#work">My Work</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#resume">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-<video preload="auto" playsinline autoplay muted loop poster="screen.jpg" id="bgvid">
-    <source src="Produce.webm" type="video/webm">
-    <source src="Produce.mp4" type="video/mp4">
-</video>
-    
-    <main id="myContainer" class="MainContainer">
-    <header>
-        <div id="ArchHeading" class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Archana Ramesh</h1>
-                <hr>
-                <p id="heading2">Front end Developer. UX Designer. Swimmer.</p>
+<body>
+    <div id="loader">
+    <img  id="loaderGif" src="images/377.gif">
+        <p id="loaderText">Loading...</p>
+    </div>
+	<div class="navbar navbar-fixed-top" data-activeslide="1">
+		<div class="container">
+		
+			<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav row">
+<!--                    <li class="col-sm-1"></li>-->
+					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
+					<li data-slide="2" class="col-12 col-sm-3"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-user"></span> <span class="text">ABOUT ME</span></a></li>
+					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">SKILLS</span></a></li>
+					<li data-slide="4" class="col-12 col-sm-3"><a id="menu-link-4" href="#slide-10" title="Next Section"><span class="icon icon-gears"></span> <span class="text">MY WORK</span></a></li>
+<!--					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">PROJECTS</span></a></li>-->
+					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">CONTACT ME</span></a></li>
+<!--                    <li class="col-sm-1"></li>-->
+				</ul>
+				<div class="row">
+					<div class="col-sm-2 active-menu"></div>
+				</div>
+			</div><!-- /.nav-collapse -->
+		</div><!-- /.container -->
+	</div><!-- /.navbar -->
+	
+	
+	<!-- === Arrows === -->
+	<div id="arrows">
+		<div id="arrow-up" class="disabled"></div>
+		<div id="arrow-down"></div>
+<!--
+		<div id="arrow-left" class="disabled visible-lg"></div>
+		<div id="arrow-right" class="disabled visible-lg"></div>
+-->
+	</div><!-- /.arrows -->
+	
+	
+	<!-- === MAIN Background === -->
+	<div class="slide story" id="slide-1">
+        <div id="index" class="container">
+<!--           class="container h-100"-->
           
-            </div>
-      
-        
-        </div>
-    <img id="archPic" src="Pic.png">    
-        </header>
-    
-    
-    
-    
-    <section class="bg-primary" id="about" >
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                   
-                    <h2 class="section-heading">ABOUT ME</h2>
-                    <hr>
-                    <p class="text-faded">I am currently a graduate student at Rochester Institute of Technology studying Human Computer Interaction. The fascination for designing interfaces and improving user experience led me to pick Human Computer Interaction as my major for my Masters. I am very enthusiastic about designing and building interfaces and aspire on becoming a UX designer. Web design and development are my key areas of interest.
-My younger days at school focussed on personality development which led me to participate in many activities such as swimming, singing and dance. I have won many medals in swimming at the district level and also am accomplished in Indian classsical music.
-During my bachelors, I participated in many voluntary activities, the most noteworthy being organising blood donation camps.</p>
-                </div>
-            </div>
+<!--          <div >  -->
+                
+           <img src="images/Archu-Main-min.png" id="image1" alt="" />
+           <img src="images/Archu-Ladder-min.png" id="image2" alt="" />
+           <img src="images/Archu-Waterfall-2.png" id="image3" alt="" />
+           <img src="images/Archu-Sky-2.png" id="image4" alt="" />
+           <img src="images/Archu-BG-min.png" id="imageBG" alt="" />
+          
             
-        <div class="call-to-action">
-                <a href="/files/Archana_Resume.pdf" class="btn btn-default btn-xl sr-button">Download Resume</a>
+<!--
+            <img src="images/Archu-Main-sm.png" id="image1-sm" alt="" />
+           <img src="images/Archu-Ladder-sm.png" id="image2-sm" alt="" />
+           <img src="images/Archu-Waterfall-sm.png" id="image3-sm" alt="" />
+           <img src="images/Archu-Sky-sm.png" id="image4-sm" alt="" />
+-->
+<!--           <img src="images/Archu-BG-sm.png" id="imageBG-sm" alt="" />-->
+                
+           <div class="row h-100">
+               
+            <div id="MainText" class="header-content mx-auto">
+              Archana Ramesh
             </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 id="skillHeading" class="section-heading">SKILLS</h2>
-                    <hr class="primary">
-                </div>
+               <div id="MainText-sm" class="header-content mx-auto">
+              Archana<br>Ramesh
+                   
+                   <p id="MainSubText-sm">
+                       UX Designer.<br>Front-end Developer.<br>Swimmer.
+                   </p>
             </div>
-        </div>
-      
+               
+               <div id="MainSubText" class="header-content mx-auto">
+              UX Designer.  Front-end Developer.  Swimmer.
+            </div>
+<!--
+               <div id="MainSubText-sm" class="header-content mx-auto">
+              
+            </div>
+-->
+          </div>
+            
+           <img src="images/Archu-BG-min.png" id="imageInvi" alt="" />
+            <img src="images/Archu-BG-sm-min.png" id="imageInvi-sm" alt="" />
+		</div><!-- /container -->
+	</div><!-- /slide1 -->
+    <!-- === Slide 2 === -->
+	<div class="slide story" id="slide-2" data-slide="2">
         
-        <div class="container">
+		<div class="container">
+            
+			<div class="row title-row">
+                
+				<div class="col-12 font-thin"><span class="font-semibold">About Me</span></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+				<div id="aboutMe">I am currently a graduate student at Rochester Institute of Technology studying Human Computer Interaction. The fascination for designing interfaces and improving user experience led me to pick Human Computer Interaction as my major for my Masters. I am very enthusiastic about designing and building interfaces and aspire on becoming a UX designer. Web design and development are my key areas of interest.
+My younger days at school focussed on personality development which led me to participate in many activities such as swimming, singing and dance. I have won many medals in swimming at the district level and also am accomplished in Indian classsical music.
+During my bachelors, I participated in many voluntary activities, the most noteworthy being organising blood donation camps.</div>
+			</div><!-- /row -->
+			
+<!--            <a class="btn btn-default btn-xl sr-button btn-resume" href="Resume.pdf">-->
+                <button class="btn btn-resume" type="button" onClick="window.open('Resume.pdf');">
+                      Download Resume</button>
+<!--                </a>-->
+		</div><!-- /container -->
+	</div><!-- /slide2 -->
+    
+    
+    
+	<!-- === SLide 3 - Portfolio -->
+	<div class="slide story" id="slide-3" data-slide="3">
+        <div id="skillDiv" class="container">
+            <div class="row title-row">
+				<div class="col-12 font-thin"><span class="font-semibold">Skills</span></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+            <br>
             <div class="row">
       
                 <div class="col-lg-3 col-md-6 text-center">
@@ -151,215 +186,59 @@ During my bachelors, I participated in many voluntary activities, the most notew
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <div id="circle4"></div>
-                        <h3 class="skilled">JQuery<hr class="seperate">Illustrator<hr class="seperate">Invision
+                        <h3 class="skilled">JQuery<hr class="seperate">Illustrator<hr class="seperate">Invision</h3>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+	</div><!-- /slide3 -->
     
     
     
-<script>
-        
-    window.mobilecheck = function() {
-  var check = false;
-  (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
-  return check;
-};
-                    
-                    
-        var limit = document.body.scrollHeight;
-        var winHeight=window.innerHeight;
-                    
-        // Helper function to get an element's exact position
-function getPosition(el) {
-  var xPos = 0;
-  var yPos = 0;
- 
-  while (el) {
-    if (el.tagName == "BODY") {
-      // deal with browser quirks with body/window/document and page scroll
-      var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
-      var yScroll = el.scrollTop || document.documentElement.scrollTop;
- 
-      xPos += (el.offsetLeft - xScroll + el.clientLeft);
-      yPos += (el.offsetTop - yScroll + el.clientTop);
-    } else {
-      // for all other non-BODY elements
-      xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
-      yPos += (el.offsetTop - el.scrollTop + el.clientTop);
-    }
- 
-    el = el.offsetParent;
-  }
-  return {
-    x: xPos,
-    y: yPos
-  };
-}
- 
-var bar = new ProgressBar.Circle(circle1, {
-  color: '#ff7e00',
-  trailColor: '#eee',
-  trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
-  strokeWidth: 6,
-  from: {color: '#ffffff', a:0},
-  to: {color: '#ff7e00', a:1},
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-      circle.setText("Expert");
-  }
-});
-                    
-                    
-var bar2 = new ProgressBar.Circle(circle2, {
-  color: '#ff9600',
-  trailColor: '#eee',
-  trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
-  strokeWidth: 6,
-  from: {color: '#ffffff', a:0},
-  to: {color: '#ff9600', a:1},
-  // Set default step function for all animate calls
-  step: function(state2, circle2) {
-    circle2.path.setAttribute('stroke', state2.color);
-      circle2.setText("Great");
-  }
-});
-              
-                    
-var bar3 = new ProgressBar.Circle(circle3, {
-  color: '#ffa200',
-  trailColor: '#eee',
-  trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
-  strokeWidth: 6,
-  from: {color: '#ffffff', a:0},
-  to: {color: '#ffa200', a:1},
-  // Set default step function for all animate calls
-  step: function(state3, circle3) {
-    circle3.path.setAttribute('stroke', state3.color);
-      circle3.setText("Good");
-  }
-});
-                    
-var bar4 = new ProgressBar.Circle(circle4, {
-  color: '#ffb400',
-  trailColor: '#eee',
-  trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
-  strokeWidth: 6,
-  from: {color: '#ffffff', a:0},
-  to: {color: '#ffb400', a:1},
-  // Set default step function for all animate calls
-  step: function(state4, circle4) {
-    circle4.path.setAttribute('stroke', state4.color);
-      circle4.setText("Learning");
-  }
-});
-                    
-    window.addEventListener("scroll", function(event) {
-  
-        
-        
-    var top = this.scrollY,
-        left = this.scrollX;
-   
-    var horizontalScroll = document.querySelector(".horizontalScroll"),
-        verticalScroll = document.querySelector(".verticalScroll");
-        picture=document.getElementById("archPic")
-        if(parseInt(top)>10){
-            document.getElementById("mainNav").style.background="rgba(0, 0, 0, 0.8)";
-            document.getElementById("archPic").src="Pic1.png";
-        }
-        else{
-            document.getElementById("mainNav").style.background="transparent";
-            document.getElementById("archPic").src="Pic.png";
-        }
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
- // some code..
-        }
-        else{
-        picture.style.opacity=.9-(parseInt(top)/(parseInt(limit)*0.2));
-        }
-        circle1=document.getElementById("circle1");
-        var position = getPosition(circle1);
-        if((parseInt(position.y)+200)<parseInt(winHeight)){
-        bar.animate(0.95);
-            bar2.animate(0.8);
-            bar3.animate(0.6);
-            bar4.animate(0.4);
-        }
-        
-}, false);
-    
-    
-    
-$().ready(function(){
-        $('[rel="tooltip"]').tooltip();
-
-    });
-
-    function rotateCard(btn){
-        var $card = $(btn).closest('.card-container');
-        console.log($card);
-        if($card.hasClass('hover')){
-            $card.removeClass('hover');
-        } else {
-            $card.addClass('hover');
-        }
-    }
-        </script>
-    
-    <section id="exp">
+	<!-- === SLide - New Portfolio -->
+	<div class="slide story" id="slide-10" data-slide="4">
 <!--
-        
-<div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 id="skillHeading" class="section-heading">EXPERIENCE</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-    
-    <div id= "row1" class="row">
-                <div class="col-xs-12 col-lg-6">
-                    <div id="firstCell" class="hover-zoom">
-                  <div id="insiderBox">
-                      <center><h2><b>INTERN</b></h2>at<h3>National Aerospace Laboratories</h3><hr class="seperate2"><h3>Surface Defect Detection on Aircraft Structures using Image Processing</h3><div class="readMore"><u><a>Read more</a></u></div></center>
-        </div>
-
-                </div>
-        </div>
-                <div class="col-xs-12 col-lg-6">
-                    <div id="thirdCell" class="hover-zoom">
-                  <div id="insiderBox">
-                      <center><h2><b>INTERN</b></h2>at<h3>Indian Institute of Science</h3><hr class="seperate2"><h3>Android Application for Ultrasonic based Testing</h3><div class="readMore"><u><a>Read more</a></u></div></center> </div>
-
-                </div>
-                </div>
-    
-        </div>
-        </div>
+      <div id='piemenu' data-wheelnav
+ data-wheelnav-spreader data-wheelnav-spreaderpath='LineSpreader'
+ data-wheelnav-slicepath='PieSlice'
+ data-wheelnav-navangle='270'
+ data-wheelnav-cssmode 
+ data-wheelnav-init>
+  <div data-wheelnav-navitemtext='All' onmouseup='showAll()'></div>
+<div data-wheelnav-navitemtext='Experience' onmouseup='showExperience()'></div>
+  <div data-wheelnav-navitemtext='Research &
+                                  Design' onmouseup='showDesign()'></div>
+  <div data-wheelnav-navitemtext='Development' onmouseup='showDev()'></div>
+            
+</div>
 -->
         
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">EXPERIENCE</h2>
-                    <hr class="primary">
-                </div>
+        <div class="filter">
+  <div class="test1"><img class="circleImages" src="images/filterAll.png">All</div>
+  <div class="test2"><img class="circleImages" src="images/filterExp.png">Experience</div>
+  <div class="test3"><img class="circleImagesUp" src="images/filterResearch.png"><br>Research & Design</div>
+  <div class="test4"><img class="circleImages" src="images/filterDev.png">Development</div>
+  <div class="mask2"><img class="circleImagesMask" src="images/filterAll.png">All</div>
+</div>
+        
+    <div id="WorkTitle">
+        <div id="WorkSpace">
+        <div class="row title-row">
+				<div  class="col-12 font-thin"><span class="font-semibold">My Work</span></div>
+          
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+          <br><br>
             </div>
         </div>
-      <div id="expCards" class="row">
-         <div class="col-lg-4 col-md-6 text-center">
+            
+        
+        <div id="togglerSection">
+            
+        <div id="expCards" class="row">
+         <div class="col-lg-4 text-center">
              <div class="card-container">
                 <div class="card">
                     <div class="front">
@@ -372,17 +251,18 @@ $().ready(function(){
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">May 2017 - August 2017</h5>
+                        
+                            <h5 class="motto">Pearit</h5>
                         <img id="pearIt" class="cardBackImg" src="images/InternMagic-title.png" />
                                 <p class="backCardText text-center">I worked on designing the wireframes and developing the prototypes for their website - Intern magic. The pages I worked on for Intern magic included its home page, the student/ employee profile page and the employer profile page, the premium account signup page.  </p>
-
-                    </div> <!-- end back panel -->
+                        <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col sm 3 -->
 <!--         <div class="col-sm-1"></div> -->
           
-        <div class="col-lg-4 col-md-6 text-center">
+        <div class="col-lg-4 text-center">
              <div class="card-container">
                 <div class="card">
                     <div class="front">
@@ -394,17 +274,18 @@ $().ready(function(){
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">January 2016 - May 2016</h5>
+                            <h5 class="motto">National Aerospace Labotories</h5>
                         
                         <img class="cardBackImg" src="images/NAL-Aircraft.png" />
                                 <p class="backCardText text-center">The aim of this project was to detect dents on aircraft structures and also estimate the depth of it. Pictures of the dents with three different phase angles were taken and using Matlab these pictures were filtered, phase wrapped, phase unwrapped and height mapped to output the height of the dent. Won the best project award out of 70 projects in Information Science Department of R. V. College of Engineering. A research paper is published on this topic.   </p>
-
+                        <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal"><span class="portfolio-span"></span></a>
+                        <div class="readMore">Click to Read More</div>
                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col sm 3 -->
 <!--         <div class="col-sm-1"></div> -->
-        <div class="col-lg-4 col-md-6 text-center">
+        <div class="col-lg-4 text-center">
             <div class="card-container">
                 <div class="card">
                     <div class="front">
@@ -412,34 +293,23 @@ $().ready(function(){
                         <div class="cardImgContainer">
                         <img class="cardFrontImg" src="images/IISC-Title.png" />
                         </div>
-                        <p class="name">Indian Institute of Science<br><br></p>
+                        <p class="name">Indian Institute of Science</p>
                         <p class="profession">Intern</p>
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">January 2015 - July 2015</h5>
+                            <h5 class="motto">Indian Institute of Science</h5>
                         <img class="cardBackImg" src="images/IISC-Back.png" />
                                 <p class="backCardText text-center">Developed an Android app and designed its front end along with the Business requirement document. It took different Data samples for different kinds of signals as inputs and generated graphs indicating the distribution of the sample for each of these signals.</p>
-
-                    </div> <!-- end back panel -->
+                        <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col-sm-3 -->
-               </div>
-    </section>
-        
-        
-    <section id="work">
-<div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 id="skillHeading" class="section-heading">MY WORK</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-    
-    <div id="expCards" class="row">
-         <div class="col-lg-4 col-md-6 text-center">
+   </div>
+            
+            <div id="designCards1" class="row">
+         <div class="col-lg-4 text-center">
              <div class="card-container">
                 <div class="card">
                     <div class="front">
@@ -447,44 +317,44 @@ $().ready(function(){
                         <div class="cardImgContainer">
                         <img class="cardFrontImg" src="images/BergenSwamp-Title.png" />
                         </div>
-                        <p class="name">Usability Testing - Bergen Swamp Preservation Society<br><br></p>
+                        <p class="name">Usability Testing - Bergen Swamp Preservation Society<br></p>
                         <p class="profession">Project at RIT</p>
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">February 2017 - May 2017</h5>
+                            <h5 class="motto">Bergen Swamp Preservation Society</h5>
                         <img class="cardBackImg" src="images/BergenSwamp-Website.png" />
                                 <p class="backCardText text-center">Collaborated with Bergen swamp preservation society to perform usability testing on their website. Our task was to spot problems in the website, evaluate the features that need improvement, features that are not working and the missing features, analyze the interaction behaviors and complete user experience. Heuristic evaluations were done post which screeners and flyers were printed, participants were recruited and a test plan was created. Usability testing was performed by creating tasks and asking participants to perform them and finally the results were interpreted.</p>
-
-                    </div> <!-- end back panel -->
+                        <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col sm 3 -->
 <!--         <div class="col-sm-1"></div> -->
           
-        <div class="col-lg-4 col-md-6 text-center">
+        <div class="col-lg-4 text-center">
              <div class="card-container">
                 <div class="card">
                     <div class="front">
                         <div class="cardImgContainer">
                         <img class="cardFrontImg" src="images/UCD-title.png" />
                             </div>
-                        <p class="name">Accoutre</p>
-                        <p class="profession"><br><br>Project at RIT</p>
+                        <p class="name">Accoutre<br><br><br></p>
+                        <p class="profession">Project at RIT</p>
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">February 2017 - May 2017</h5>
+                            <h5 class="motto">Accoutre</h5>
                         
                         <img class="cardBackImg" src="images/UCD-interview.png" />
                                 <p class="backCardText text-center">Designing an app that would assist people to choose clothing based on the weather condions and fashion trends. The project involves contextual inquiry, building the flow and sequence diagrams, artifact, culture, physical and consolidated sequence models and also making the affinity diagram. Low fidelity and hi fidelity prototypes were also made along with story boarding.</p>
-
-                    </div> <!-- end back panel -->
+                        <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col sm 3 -->
 <!--         <div class="col-sm-1"></div> -->
-        <div class="col-lg-4 col-md-6 text-center">
+        <div class="col-lg-4 text-center">
             <div class="card-container">
                 <div class="card">
                     <div class="front">
@@ -492,88 +362,136 @@ $().ready(function(){
                         <div class="cardImgContainer">
                         <img class="cardFrontImg" src="images/maps-title.png" />
                         </div>
-                        <p class="name">Google Maps Study<br><br></p>
-                        <p class="profession"><br>Project at RIT</p>
+                        <p class="name">Google Maps Study<br><br><br></p>
+                        <p class="profession">Project at RIT</p>
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">February 2017 - May 2017</h5>
+                            <h5 class="motto">Google Maps Study</h5>
                         <img class="cardBackImg" src="images/Maps-Problem3.png" />
-                                <p class="backCardText text-center">In this study, our group observed users using google maps and analyzed the problems faced by them with the user interface. This was done by conducing field observations and contextual inquiry and by conducing interviews. Post this was the stage of creating persona, story boarding and heuristic evaluations. Finally we will suggested possible solutions through wireframes and prototypes to the problems faced by the people based on information from the persona creation, design scenarios and story boarding.</p>
-
-                    </div> <!-- end back panel -->
+                                <p class="backCardText text-center">In this study, our group observed users using google maps and analyzed the problems faced by them with the user interface. This was done by conducing field observations and contextual inquiry and by conducing interviews. Post this was the stage of creating persona, story boarding and heuristic evaluations. Finally we will suggested possible solutions through wireframes and prototypes to the problems faced by the people based on information from the persona creation, design scenarios and story boarding.</p><a class="portfolio-link" href="#portfolioModal6" data-toggle="modal"><span class="portfolio-span"></span></a>
+                <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col-sm-3 -->
                </div>
     
     
-    <div id="expCards" class="row">
-         <div class="col-lg-4 col-md-6 text-center">
+    <div id="designCards2" class="row">
+         <div class="col-lg-4 text-center">
              <div class="card-container">
                 <div class="card">
                     <div class="front">
                         
                         <div class="cardImgContainer">
+                            <br><br><br><br>
                         <img id="EZPassImg" class="cardFrontImg" src="images/EZ-title.png" />
                         </div>
-                        <p class="name">Heuristic Evaluation of Official Website for Virginia’s EZ Pass System<br><br></p>
+                        <p class="name">Heuristic Evaluation of Virginia's EZ pass system's official website<br></p>
                         <p class="profession">Project at RIT</p>
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">February 2017 - May 2017</h5>
+                            <h5 class="motto">Virginia's EZ pass system</h5>
                         <img class="cardBackImg" src="images/EZ-website.png" />
                                 <p class="backCardText text-center">The Aim of the project was to find a system and do a heuristic evaluation of the website. All of us first discussed to see which was the website are we going to study and after a lot of discussion, we decided to study, the official website for Virginia’s EZ Pass.
 We all first performed heuristic evaluations individually to identify the usability and accessibility
 issues in the website. Once this was done, we all sat and discussed each of our heuristic evaluations and came up
 with a document which was a compilation of all of the problems we found with the website. A
 total of 27 usability and accessibility issues was found with the website.</p>
-
-                    </div> <!-- end back panel -->
+<a class="portfolio-link" href="#portfolioModal7" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col sm 3 -->
 <!--         <div class="col-sm-1"></div> -->
           
-        <div class="col-lg-4 col-md-6 text-center">
+        <div class="col-lg-4 text-center">
              <div class="card-container">
                 <div class="card">
                     <div class="front">
-                        <div class="cardImgContainer">
-                        <img class="cardFrontImg" src="images/Twitter-title.png" />
+                        <div class="cardImgContainer"><br><br><br>
+                        <img class="cardFrontImg" src="images/Amuse-title.png" />
                             </div>
-                        <p class="name">Twitter Project</p>
-                        <p class="profession"><br><br>Project at RIT</p>
+                        <p class="name">Coaster Crunch<br><br><br><br></p>
+                        <p class="profession">Project at RIT</p>
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">October 2016 - December 2016</h5>
+                            <h5 class="motto">Coaster Crunch</h5>
+                        
+                        <img class="cardBackImg" src="images/Amuse_Affinity.png" />
+                                <p class="backCardText text-center">The most common problem that big amusement parks face today is huge crowds which lead to long wait times and long lines for each ride in the park. The wait times can be so long that it can make the people get so frustrated and not wanting to come back again. This app is designed to bring in a solution to this problem faced by bigger amusement parks.</p>
+<a class="portfolio-link" href="#portfolioModal10" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+        <div class="col-lg-4 text-center">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        
+                        <div class="cardImgContainer">
+                        <img class="cardFrontImg" src="images/voice-title.png" />
+                        </div>
+                        <p class="name">Voice Assistants Study<br><br><br></p>
+                        <p class="profession">Project at RIT</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">Voice Assistants Study</h5>
+                        <img class="cardBackImg" src="images/voice-interview.png" />
+                                <p class="backCardText text-center">
+                        We are aiming to perform Qualitative, Quantitative, and experimental research in the 'Research Methods' course. We have chosen to study how voice assistant softwares affect academic productivity in RIT productivity. </p>
+<a class="portfolio-link" href="#portfolioModal11" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+   </div>			
+        
+        <div id="devCards" class="row"> 
+         <div class="col-lg-6 text-center">
+             <div class="card-container devContainerL">
+                <div class="card">
+                    <div class="front">
+                        <div class="cardImgContainer"><br>
+                        <img class="cardFrontImg" src="images/Twitter-title.png" />
+                            </div>
+                        <p class="name">Twitter Project<br><br><br><br></p>
+                        <p class="profession">Project at RIT</p>
+
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                            <h5 class="motto">Twitter Project</h5>
                         
                         <img class="cardBackImg" src="images/Twitter-search.png" />
                                 <p class="backCardText text-center">This application was developed, for the course 
 ‘Knowledge Representation Technologies’ in Grad school, using Java Swing and MongoDB. 
 It fetched records of customers from a twitter database related to a given input keyword.</p>
-
-                    </div> <!-- end back panel -->
+<a class="portfolio-link" href="#portfolioModal8" data-toggle="modal"><span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col sm 3 -->
 <!--         <div class="col-sm-1"></div> -->
-        <div class="col-lg-4 col-md-6 text-center">
-            <div class="card-container">
+        <div class="col-lg-6 text-center">
+            <div class="card-container devContainerR">
                 <div class="card">
                     <div class="front">
                         
                         <div class="cardImgContainer">
                         <img class="cardFrontImg" src="images/Course-title.png" />
                         </div>
-                        <p class="name">Course Outcome Mapping<br></p>
-                        <p class="profession"><br>Project at R. V. College of Engineering</p>
+                        <p class="name">Course Outcome Mapping<br><br><br></p>
+                        <p class="profession">Project at R. V. College of Engineering</p>
 
                     </div> <!-- end front panel -->
                     <div class="back">
-                            <h5 class="motto">January 2015 - May 2015</h5>
+                            <h5 class="motto">Course Outcome Mapping</h5>
                         <img class="cardBackImg" src="images/Course-pic1.png" />
                                 <p class="backCardText text-center">Designed and developed a web application for the course 
 outcome mapping system in R. V. College of Enginering, Bangalore. Each course had outcomes, and the scores students obtain in the tests and exams were mapped to these course outcomes. 
@@ -581,52 +499,1081 @@ The overall percentage of each student was compared to all the other students fo
 successful the student was in fulfiling that course outcome. 
 This also helped in updating the courses in future. Backend: MySQL
 Front End: Html, CSS, Javascript, Bootstrap, Ajax and JQuery</p>
-
-                    </div> <!-- end back panel -->
+<a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
+    <span class="portfolio-span"></span></a>
+                    <div class="readMore">Click to Read More</div>                     </div> <!-- end back panel -->
                 </div> <!-- end card -->
             </div> <!-- end card-container -->
         </div> <!-- end col-sm-3 -->
-               </div>
-        </div>
-        </section>
-       <section id="resume">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-<!--                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>-->
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact" style="color:#ff7e00"></i>
-                    <p style="color:white;">(585)-993-4145</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact" style="color:#ff7e00"></i>
-                    <p><a href="mailto:archanaramesh87@gmail.com" style="color:white">archanaramesh87@gmail.com</a></p>
-                </div>
-     
-            </div>
-        </div>
-    </section>
-        </section>
-</main>
+               </div>			
 
+        
+        </div>
+</div>
+	
+		
+    <!-- === Slide 6 / Contact === -->
+	<div class="slide story" id="slide-6" data-slide="5">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-light">Let's get in Touch!</div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+            <div id="contact-row-4" class="row">
+				<div class="col-sm-2 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-3 with-hover-text">
+                    <div class="iconPhone">&nbsp;</div>
+<!--					<p><a target="_blank" href="#"><i class="icon-phone"></i></a></p>-->
+					<p class="text-center">
+                        <span class="hover-text txtcntr"><a href="tel:+15859934145">+1-(585)-993-4145</a></span></p>
+				</div><!-- /col12 -->
+                <div class="col-sm-2 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-3 with-hover-text">
+<!--					<p><a target="_blank" href="#"><i class="icon-envelope"></i></a></p>-->
+                    <div class="iconEmail"></div>
+                    <p class="text-center">
+                        <span class="hover-text txtcntr"><a href="mailto:archanaramesh87@gmail.com">archanaramesh87@gmail.com</a></span>
+				</div><!-- /col12 -->
+				<div class="col-sm-2 hidden-sm">&nbsp;</div>
+		</div><!-- /container -->
+	</div><!-- /Slide 6 -->
+	
     
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <img class="modalTitleImg" src="images/InternMagic-icon.png" />
+                  <p class="ModalTitle">PearIt</p>
+                    <p class="ModalLocation">Los Angeles, LA</p>
+                    <p class="ModalDuration">May 2017 - August 2017</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+                    <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            I worked for a start up called Pearit, based in Los Angeles over the summer and my role was that of a UX Design Intern.
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+They had basic website setup and they wanted me to redesign some of their pages.<br>
+                            <p >The pages that I redesigned were:</p>
+                        <li>The Home page</li>
+                        <li>The premium account page</li>
+                        <li>The cancellation page</li>
+                        <li>Student/Employee Account page</li>
+                        <li>Employer Account Page</li><br>
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/intern-home.png"/></div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/intern-7.png"/></div>
+                        <div class="col-lg-6  ModalText">
+                            <p class="ModalLeftText">Target Audience:</p>
+                            <li>Students</li> 
+                            <li>potential Employees</li> 
+                            <li>Employers</li>
+                            <br>
+                            <p>Methodology:</p>
+I first looked at the design of the current pages and performed heuristic evaluations to look at the problems and the usability issues in the website.
+I came up with the heuristic reports and gave it to my manager. 
+Based on the usability issues, I started to think of the changes that I had to make in the website. I also changed some of the aesthetics wrt the websites. The premium account page, and the cancellation page was completely built by me.
+                        </div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            <p>Process:</p>
+The first page that I started to design from scratch was the premium account page an the cancellation page.
+For the premium account page, I first looked at all the elements that had to go into the page and started building a wireframe using balsamic. Once this wireframe was approved by my manager, I started to build the prototype using Photoshop and mock plus.
+I designed some of the elements on the page and also added all the content onto the page.
+For the Student/ employee, employer account pages, and the home page, I completely redesigned the pages after doing a heuristic evaluation. 
+I first made wireframes, post which I made the prototypes.
+                        </div>
+                        
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/intern-8.png"/></div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Intern-Wire.gif"/></div>
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Intern-subs.gif"/></div>
+                    </div>     
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Intern-6.png"/></div>
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/intern-5.png"/></div>
+                 </div>
+   
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <img class="modalTitleImg" src="images/NAL-Title.png" />
+                  <p class="ModalTitle">National Aerospace Laboratories</p>
+                    <p class="ModalLocation">Bangalore, India</p>
+                    <p class="ModalDuration">January 2016 - May 2016</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            <p>Introduction:</p>
+The present day visual inspection of the aircraft is purely skill based, is time
+consuming, raises safety issues to inspector, and lack of record of the inspection.
+Also, the accuracy can be affected by inspector boredom, weather conditions and weariness. Images captured from the aircraft surface and presented to the inspector, after enhancing the defects can make the visual inspection easier, accurate and provide record ability which in turn result in saving time, and ensure the safety of aircraft.
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/NAL-Aircraft.png"/></div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/NAL-Project.png"/></div>
+                        <div class="col-lg-6  ModalText">
+                            <p>Problem Statement:</p>
+Development and implementation of algorithms for the detection of surface
+defect (dents) in aircraft surfaces using image processing. It involves image
+acquisition, noise removal, background removal, phase wrapping, phase unwrapping
+and height mapping.<br><br>
 
-    <!-- Theme JavaScript -->
-    <script src="plugins/jquery-3.2.1.min.js"></script>
-    <script src="js/creative.js"></script>
-<script src="js/app.js"></script>
-    </body>
+<p>Objectives:</p>
+The project aims to create a semi-automated system to perform dent detection
+on the surface of aircraft structures. The objectives include identification of dented
+regions, classification of the dents from surface features such as writings, markings,
+textures and patterns and quantification of the detected dent.
+                        </div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            <p>Methodology:</p>
+Use of 2D image processing using edge detection is not good enough for the
+detection of dents as dents deform the surface into third dimension. Also the use of
+edge detection will also detect the surface features like writing, markings on the
+surface also as defects. This problem can be solved by trying to re-create the height
+information of the surface. Variety of ways are described in literature to carry out the
+profile mapping using optical profilometry. Fringe pattern based optical profilometry
+method is adopted in this study using 3-step Phase Shift which involves following
+steps: 1) digital fringe projection, 2) image acquisition, 3) image processing, 4) fringe
+analysis, that includes phase detection and phase unwrapping, and 5) height mapping.
+Digital Fringe Projection involves projecting a fringe pattern onto the object
+surface. A sinusoidal fringe pattern is used as it has features that counter defocussing
+and is most apt to be processed by linear filtering. The setup consists of a projection
+unit, an acquisition unit and a processing or analysis unit.
+The images of the reference plane as well as of the object are captured with
+the camera, perpendicular to the surface of the plane or object, and the projector at an
+angle in the Image Acquisition step. The captured images contain the projected
+patterns on the reference and object surface. 3 phase shifted images are acquired per
+surface.
+                        </div>
+                        
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/NAL-wrapping.png"/></div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/NAL-final.png"/></div>
+                        <div class="col-lg-6  ModalText">
+                            The images that are captured include the surface that needs to be tested as well
+as certain unwanted elements, such as the background, shadows and reflected light.
+Image Processing involves the pre-processing of the captured images to remove the
+aforementioned unwanted elements. Background removal is performed to improve
+computation time and avoid redundant processing.
+Fringe Analysis is the next operation performed on the pre-processed images.
+Fringe Analysis consists of 2 steps: (i) phase detection, and (ii) phase unwrapping. In
+phase detection, the image is analysed to produce a wrapped phase map distribution.
+An inverse tangent function is used to generate phase map from the intensity values of
+the captured images. The resultant map contains the localised phase values of the
+pixels. The recovered/estimated phase is obtained in the interval [- π, + π]. In general,
+true phase may range over an interval greater than 2π. In such cases, phase values
+contain artificial discontinuities. The process of determining the unknown integral
+multiple of 2π to be added at each pixel of the wrapped phase map to make it
+continuous by removing the artificial 2π discontinuities is referred to as phase
+unwrapping. Phase unwrapping is an important step with many pre-existing
+algorithms designed to perform the task. The unwrapped phase map obtained contains the true phase values at each pixel location.
+The phase values are then converted into depth information using Height
+Mapping. The dent is detected based on the height map, and then quantified to find
+the relative dent depth and area of the dented region. Calibration is needed to perform
+accurate image to real world coordinate transformation.<br>
+                        Unit testing, Integration testing and system testing are done to see if if all the modules are working fine, individually and when they are integrated with other modules. Testing will also help remove bugs from the software.
+After testing all the modules,  GUI was made and the final touches to the software was made. <br><br>
+                            We also published a paper based on this research:<br>
+                        Augustin M.J, Archana Ramesh, Yaswi Jalan, Priyank Singh, Nitin Joy, Amit Gupta, Nitesh Gupta, “Adaptive Background Removal for Fringe Profilometry based Surface Inspection of Aircraft Structures”, National Seminar on Aerospace Structures XIX, February 23-25th, 2017, VIT University, Vellore India</div>
+                    </div>    
+   
+                    </div>
+                    
+          
+           <div class="ModalSpace">
+                    </div>
+          <div class="repB">
+                  <div class="repBDiv" onClick="window.open('NAL_report.pdf');"><img class="reportButton" src="images/paper_button.png"><br>
+              <span class="repBA">Click to download the Research Paper</span></div>
+              </div>
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <img class="modalTitleImg" src="images/IISC-Title.png" />
+                  <p class="ModalTitle">Indian Institute of Science</p>
+                    <p class="ModalLocation">Bangalore, India</p>
+                    <p class="ModalDuration">January 2015 - July 2015</p>
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            <div class="li-Xleft">
+                            Developed an Android app, and designed its front end, that took diﬀerent Data samples for diﬀerent kinds of signals as inputs and generated graphs indicating the distribution of the sample for each of these signals.<br><br>
+                            <p>Functional features:</p>
+<li>In the transmitter part, there is AM wave generation where using equations the AM wave is generated using input values such as Amplitude, Sampling rate ,frequency and signal type.<br>
+<li>The other functionality is generation of continuous wave using input parameters such as amplitude, sampling rate, time duration.<br>
+AM equation : Am*sin(2*PI*frequency*t)*(1-cos((2*PI*(frequency/5)*t))+offset,<br>
+and for continuous sine wave<br>
+Am*sin(2*PI*frequency*t) + offset,<br>
+where,<br>
+Am : Amplitude of the carrier,<br>
+frequency: Carrier frequency,<br>
+frequency/5: message frequency is assumed to be one fifth of the carrier frequency,<br>
+offset: is equal to the amplitude. This shifts the entire wave upwards so as to not allow the signal take negative values.</li>
+<li>In the receiver part, when the data is loaded, there is FFT graph generation using Tuckis algorithm.</li>
+                            </div>
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/IISC-Diag1.png"/></div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/IISC-Diag2.png"/></div>
+                        <div class="col-lg-6  ModalText">
+                            <div class="li-Xleft">
+                            <p>Process flow:</p>
+<li>In the transmitter part,<br>
+a. First the amplitude must be entered, and then the sampling rate. based on the sampling rate, the frequency range is given based on which the frequency has to be selected. Now if AM signal type is chosen, the AM wave will be generated.<br>
+b. Now with the same parameters, if time duration is entered continuous wave is generated.</li>
+<li>In the receiver part,<br>
+a. By loading data, the graph for the data file is generated.<br>
+Now for the same data ,FFT is generated.<br>
+b. Features for future development of Filters have also been kept. <br>
+</li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <img class="modalTitleImg" src="images/BergenSwamp-Title.png" />
+                  <p class="ModalTitle">Usability Testing for the Bergen Swamp Preservation Society website</p>
+                    <p class="ModalLocation">RIT, Rochester, NY</p>
+                    <p class="ModalDuration">January 2017 - May 2017</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            <p>Objective:</p>
+The goal was to study the Bergen swamp preservation society website to be able to identify the usability issues. The main aim of the study was to make sure that the users could clearly  understand and use all the features of the application.<br><br>
+                            <p>Purpose:</p>
+We were a team of 6 doing the study, and we collaborated with the developer of the new Bergen swamp preservation society website to go about with our usability studies. The main goal was to see if the user experience in the website mapped to the users conceptual model on how to use the website. The purpose was to detect all the usability issues related to the website and also get feedback from all the participants on the website and suggestions on how to improve the website.
+                            
+
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/BergenSwamp-Website.png"/></div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/BergenSwamp-Flyer.png"/></div>
+                        <div class="col-lg-6  ModalText">
+                            
+                            
+
+                            <p>Stakeholders:</p>
+People from teens to 60+ are our target audience.<br><br>
+                            <p>Process:</p>
+                            The Bergen swamp preservation society website had many functionalities in it like, getting directions, calendar, events, photos and so on.<br>
+The first step in our usability testing study was to do the heuristic evaluations.
+Initially, all of us, individually used the different heuristics and all the gestalt principles to detect the usability flaws in the website. Post this, we merged all of our findings.<br>
+	5 students were recruited as participants via flyers. All potential participants had to take the screener questions, and if they were eligible, they were selected to be participants. A 20$ Amazon gift card was given after the study to all the participants. Pilot tests were done initially with 2 participants, Test design was made and a test plan was formulated.<br>
+	5 tasks were created and all of them were based on problem scenarios.
+These tasks were shuffled between all participants so that there is no transfer of knowledge between tasks and counterbalance the tasks.<br>
+The success criteria for each task was predetermined and decided upon by all the team members in advance. Qualitative and quantitative analysis of the data was done. Qualitative analysis was done by asking the participants questions after every task, quantitative analysis was done by counting the number of clicks and the time taken for every task.
+<br>
+SUS scale was used to measure the usability of the system
+
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-6  ModalText">
+                            <p>Setup:</p>
+The usability test was done in the usability lab at B. Thomas Golisano College of Computing and Information Sciences.  There were two rooms, a testing room and an observation room. There was a one was mirror between them, where only the observers could see the people in the testing room.  The morae software (Morae-observer and Morae-observer) were used to record all the observations of the observers. There was a web camera and microphone to record and listen to the participants.
+Based on the input, feedback and suggestions made by the participants, report was written.
+We presented the whole usability study to the client and submitted the report with the recommendations and usability issues present in the website.
+                        </div>
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/BergenSwamp-Observe.png"/></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                    <div class="col-lg-6  ModalText"><img class="modalImg" src="images/BergenSwamp-diag1.png"/></div>
+                    <div class="col-lg-6  ModalText"><img class="modalImg" src="images/BergenSwamp-diag2.png"/></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                    <div class="col-lg-6  ModalText"><img class="modalImg" src="images/BergenSwamp-diag3.png"/></div>
+                    <div class="col-lg-6  ModalText"><img class="modalImg" src="images/BergenSwamp-diag4.png"/></div>
+                    </div>
+                    
+                    
+                    </div>
+          
+          <div class="ModalSpace">
+                    </div>
+          <div class="repB">
+                  <div class="repBDiv" onClick="window.open('bergen_report.pdf');"><img class="reportButton" src="images/report_button.png"><br>
+              <span class="repBA">Click to download the report</span></div>
+              </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <img class="modalTitleImg" src="images/UCD-title.png" />
+                  <p class="ModalTitle">Accoutre</p>
+                    <p class="ModalLocation">RIT, Rochester, NY</p>
+                    <p class="ModalDuration">January 2017 - May 2017</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            Accoutre is a mobile application for dressing, that is aimed at providing suggestions and allowing its users to pick out clothes, either (i) based on the current weather outside, or the weather throughout the day, or/and (ii) based on an occasion or an event that they are to attend, such as a party, wedding, interview, sports activity, and so on, scheduled on their calendar or in their emails. 
+Primary stakeholders of our application would be the end users who own and use a smartphone, and ones who need help in picking out clothes based on the current weather outside, or an event they are to attend. 
+
+
+
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/UCD-vision.png"/></div>
+                    </div>
+                    
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/UCD-interview.png"/></div>
+                        <div class="col-lg-6  ModalText">
+                            <p>Contextual Inquiry:</p>
+
+We conducted contextual inquiries for 12 participants in total. The interviews were conducted via video calls, or in person. We interviewed both male and female participants, between the ages of 20 to 60+ years, and who owned a smartphone. To ensure that the data we collected from our contextual inquiries came from a relatively diverse set of end users, each of our group members interviewed participants who were located at different geographical regions, with varying climates and weather conditions. The interviews also provided us with different scenarios for the type of occasions or events that the participants were most likely to attend or dress for. 
+
+The interviews also provided us with different scenarios for the type of occasions or events that the participants were to attend or dress for. <br>
+
+We gathered important information about the factors influencing the daily routine of picking out clothes for our participants. Most users used a weather application on their smartphones to check the weather, and then proceeded with selecting their clothes. While a few users, mostly college students, picked out their clothes randomly. We also came across a user who took suggestions from their friends and family, to select their outfit for a special occasion or event. The interviews also provided us with different scenarios for the type of occasions or events that the participants were most likely to attend or dress for. 
+
+
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <img class="modalImg" src="images/UCD-Affinity.png"/>
+                        <div class="col-lg-12  ModalText li-Xleft">
+                            <p>Design Ideation and Brainstorming:</p>
+From the data collected through our contextual inquiries, we could identify the primary stakeholders of our application, that is, the end users who own and use a smartphone, and ones who need help in picking out clothes based on the current weather outside, or an event they are to attend. 
+Based on the information gathered from our study models – flow models, sequence models, artifact models, physical models, and cultural models, we consolidated our findings into an affinity diagram, and a consolidated sequence model. 
+In general, our key observations from ‘walking the wall’, with respect to the primary workflows for users to pick out their clothes were as follows: 
+<li>Users check the current weather outside or the weather throughout the day, using a reliable weather app, before picking out clothes for that day.</li>
+<li>They select clothes based on an occasion or an event, such as a party, wedding, interview, sports activity, and so on.</li>
+<li>They pick out clothes randomly.</li>
+<li>They use applications such as Instagram or Pinterest to follow fashion trends and be aware.</li>
+
+                        </div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid1.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid2.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid3.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid4.jpg"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid5.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid6.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid7.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid8.jpg"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid9.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid10.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid11.jpg"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-lowFid12.jpg"/></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-12  ModalText li-Xleft">
+                            <p>Specific Tasks and App Features:</p>
+To narrow down on the design ideas for our application from the users' perspective, we identified the following tasks and features as they relate to the goals:
+<li>Sync with the calendar application.</li>
+<li> Access to user’s current location.</li>
+<li> Access and connect to the weather application.</li>
+<li> Sort clothes based on categories, for example – type, fabric or season.</li>
+<li> Option to feed-in clothes present in user’s current wardrobe under each category.</li>
+<li> Run algorithms to choose and suggest clothes based on weather, events, or fashion trends.</li>
+<li> Option to choose and mix-and-match clothes manually, in case the algorithm gets it wrong.</li>
+<li> Suggestion to shop for clothes online, based on current requirement and unavailability in user’s closet.</li>
+<li> Suggestion of suitable online retailers, and direction to their official websites.</li>
+
+Based on the information gathered, we have generated the various study models, and have consolidated our findings into an affinity diagram, and a consolidated sequence model. We were successful in gathering sufficient information to help us understand users’ patterns of picking out clothes, which would help us tremendously in the next phase of our project.
+
+
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi1.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi2.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi3.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi4.png"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi5.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi6.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi7.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi8.png"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi9.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi10.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi11.png"/></div>
+                        <div class="col-lg-3  ModalText"><img class="modalImg" src="images/UCD-Hi12.png"/></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-12  ModalText li-Xleft">
+                            <p>Future Improvements:</p>
+For future work, the aspects of relevant tasks and activities that could be improved are as follows: 
+<li>The application would help users to conjure a virtual image of how they would look in an outfit.</li>
+<li>It would allow users to connect with their friends/family, share images of outfits with them, and take suggestions.</li>
+<li>It would notify users about online offers or sales by their favorite retailers, or based on their  current wardrobe requirement.</li>
+<li>It would allow users to save and maintain their online shopping history.</li>
+                        </div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <img class="modalImg" src="images/UCD-Persona1.png"/>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/UCD-Problem1.png"/></div>
+                        <div class="col-lg-6  ModalText">
+                            <p>Problem Scenario:</p>
+Each morning, Jenny wakes up and checks the calendar application and e-mail notifications on her phone. She then takes a shower, and randomly picks out clothes to wear to work. Since her office is 10 minutes away from her home, she usually walks to work. One day, on her way to work, it started to pour suddenly. Because Jenny was not prepared for the rain, and did not have a raincoat or an umbrella with her, her clothes and bag got completely drenched. 
+
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-6  ModalText">
+                            <p>Design Scenario:</p>
+Ever since Jenny started using the Accoutre app, she wakes up each morning and checks the app, along with other notifications on her phone. She then takes a shower, and wears the clothes suggested by the Accoutre app, based on the current weather outside, and/or an occasion or event she must attend, like a boarding meeting or a party. The app helps her pick out the appropriate outfit each time.
+
+
+                        </div>
+                        
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/UCD-Solution1.png"/></div>
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <img class="modalTitleImg" src="images/maps-title.png" />
+                  <p class="ModalTitle">Google Maps Study</p>
+                    <p class="ModalLocation">RIT, Rochester, NY</p>
+                    <p class="ModalDuration">February 2017 - May 2017</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+The Aim of the project was to find a system and evaluate its design based on Normans and Gestalt principles (Principles of HCI). We chose Google Maps for this project.<br><br>
+                            The first phase over here was field observations and interviews. Each one of us first observed people using Google maps on phones and laptops individually and wrote down our observations. We came back and discussed each one of our observations and then came up with a set of interview questions based on our observations.
+<br>Now each of us interviewed participants individually using the interview questions that we had. This was to see how do users interact with the environment in real time and what are the problems they face.
+
+
+
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/maps-interview.png"/></div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/maps-persona1.png"/></div>
+                        <div class="col-lg-6  ModalText">
+                            The next step was to create User Profiles based on the data we collected from contextual Inquiry. Some characteristics that were decided upon were included and user profiles were created. 
+Next, personas were created for each profile present based on our contextual Inquiries and field observations.
+
+                        </div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/maps-persona2.png"/></div>
+                        <div class="col-lg-6  ModalText"><img class="modalImg" src="images/maps-persona3.png"/></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-12  ModalText">
+                           The final step was creation of Problem and Design Storyboards. The design Storyboard/ Scenario would tell as to how the design improvement we have suggested would affect the problem scenario. Both text and graphical representation of storyboards were done.
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-2  ModalText"></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Problem1.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Problem2.png"/></div>
+                        <div class="col-lg-2  ModalText"></div>
+                    </div>
+                        
+                    <div class="row">
+                        <div class="col-lg-2  ModalText"></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Problem3.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Problem4.png"/></div>
+                        <div class="col-lg-2  ModalText"></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Problem5.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Problem6.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Problem7.png"/></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-2  ModalText"></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution1.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution2.png"/></div>
+                        <div class="col-lg-2  ModalText"></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution3.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution4.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution5.png"/></div>
+                        
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution6.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution7.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution8.png"/></div>
+                        
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution9.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution10.png"/></div>
+                        <div class="col-lg-4  ModalText"><img class="modalImg" src="images/Maps-Solution11.png"/></div>
+                    </div>
+                    
+                    
+                    
+                    
+                    </div>
+          
+          
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <br><br>
+                    <img id="EZTitle" src="images/EZ-title.png" />
+                    <br><br>
+                  <p class="ModalTitle">Heuristic Evaluation of Virginia's EZ pass system's official website</p>
+                    <p class="ModalLocation">RIT, Rochester, NY</p>
+                    <p class="ModalDuration">February 2017 - May 2017</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+The Aim of the project was to find a system and do a heuristic evaluation of the website.
+<br>
+All of us first discussed to see which website we were going to study and after a lot of discussion, we decided to study, the official website for Virginia’s EZ Pass.
+<br>
+We all first performed heuristic evaluations individually to identify the usability and accessibility issues in the website.
+Once this was done, we all sat and discussed each of our heuristic evaluations and came up with a document which was a compilation of all of the problems we found with the website. A total of 27 usability and accessibility issues was found with the website.
+
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/EZ-website.png"/></div>
+                    </div>
+                    
+                    </div>
+          
+          <div class="ModalSpace">
+                    </div>
+          <div class="repB">
+                  <div class="repBDiv" onClick="window.open('ez_report.pdf');"><img class="reportButton" src="images/report_button.png"><br>
+              <span class="repBA">Click to download the report</span></div>
+              </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <br><br>
+                    <img id="EZTitle" src="images/Twitter-title.png" />
+                    <br><br>
+                  <p class="ModalTitle">Twitter Project</p>
+                    <p class="ModalLocation">RIT, Rochester, NY</p>
+                    <p class="ModalDuration">October 2016 - December 2016</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            This application was developed, for the course ‘Knowledge Representation Technologies’ in Grad school, using Java Swing and MongoDB. It fetched records of customers from a twitter database related to a given input keyword
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/Twitter-search.png"/></div>
+                    </div>
+                    
+                    </div>
+          
+          
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <br><br>
+                    <img class="modalTitleImg" src="images/Course-title.png" />
+                    <br><br>
+                  <p class="ModalTitle">Course Outcome Mapping</p>
+                    <p class="ModalLocation">R.V. College, Bangalore, India</p>
+                    <p class="ModalDuration">January 2015 - May 2015</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+Designed and developed a web application for the course outcome mapping system in R. V. College of Enginering, Bangalore. The student portfolio includes marks, attendance, certificates, tuition, grade point averages and other relevant information. The Course Outcome Mapping System performs this batch segregation and assists the counsellors in tracking the performance of students with respect to marks, attendance and extracurricular activities. The Course Outcome Mapping System also enables the parents to keep track of the performance of their wards and interact with counselors personally using the appointment scheduler included in the portal.                         </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/Course-pic1.png"/></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+              
+                    <div class="row">
+                        <div class="col-lg-3 ModalText align-middle"></div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/Course-pic2.png"/></div>
+                        <div class="col-lg-3 ModalText align-middle"></div>
+                    </div>
+              
+                    </div>
+          
+                    <div class="ModalSpace">
+                    </div>
+          <div class="repB">
+                  <div class="repBDiv" onClick="window.open('course_report.pdf');"><img class="reportButton" src="images/report_button.png"><br>
+              <span class="repBA">Click to download the report</span></div>
+              </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+          <div class="row">
+              
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+          </div>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+        
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <br><br>
+                    <img id="EZTitle" src="images/Amuse-title.png" />
+                    <br><br>
+                  <p class="ModalTitle">Coaster Crunch</p>
+                    <p class="ModalLocation">RIT, Rochester, NY</p>
+                    <p class="ModalDuration">September 2017 - Present</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        
+                        <div class="col-lg-12  ModalText">
+                             <p>Introduction:</p>
+
+The most common problem that big amusement parks face today is huge crowds which lead to long wait times and long lines for each ride in the park. The wait times can be so long that it can make the people get so frustrated and not wanting to come back again. This app is designed to bring in a solution to this problem faced by bigger amusement parks.<br><br>
+                            <p>Problem:</p>
+
+We all want to spend our leisure time with family and friends especially when we're loaded with work. A theme park is often of the most ideal places for people to relax, have fun and forget their troubles for a brief period of time. But isn’t it exhausting to wait in a seemingly never ending queue to get on every single ride? During peak seasons there are queues which could go on up to an hour or even more for every ride. This could be a frustrating problem to a lot of people who have spent a lot of money on the tickets and don’t get to go on all or most of the rides in the park. The whole experience of waiting in a queue for an hour or more for a ride that lasts a few minutes can be stressful, exhausting and demoralizing at times.<br><br>
+
+                            <p>Solution:</p>
+A solution for this would be to introduce flash passes or in other words to introduce points for every ride. For instance, let’s say we have one point per ride, and the people have to swipe a card for every ride. After three rides, the person can get a pass for the next ride, that he has queued up, for which there would be there would be a separate que where only the people who have accumulated the points and who have that ride queued up for themselves will be able to enter. In this way people would be able to complete most of the rides in an amusement park.
+The concept of a flash pass has already been initiated by Disney for their amusement parks and entertainment centers and resorts. However, our objective is to digitize the entire concept so we can develop an app. The application will keep track of all the points accumulated by the park visitors which can be used at any time during the year. The app will also give notification of options on which rides can be accessed without facing the queues. Points can also be used for other perks as well. For example 200 points can be used for a number of free rides.
+This solution falls under ‘Market or population characterization for new system concepts’ which will require us to understand the needs of our target users and development a new in-house system for existing theme parks.<br><br>
+<p>Customer:</p>
+More businesses in this day and age are reverting to using user data as part of their process strategy. In this particular case, the target user is quite clear – people who visit theme parks multiple times a year. Gaining user data is core towards the successful implementation of our solution.<br><br>
+<p>Stakeholders:</p>
+There are two key stakeholders that we need to focus on to ensure practical application of the proposed solution – the people who frequent theme parks annually and the businesses who own them. The goal of this process is to ensure that customers who visit theme parks multiple times in a year are given the opportunity to enjoy future visits without the added pressure of waiting in long lines which would encourage them to increase their visits. The businesses will be able to reward their most loyal customers and attract new ones who would then turn into loyal customers which would drastically increase the brand value of company which owns the theme park. Customers who adapt to the application might worry that more and more users are switching to the digital flash pass system and lines that are supposed to be for flash pass users are now becoming as long as regular lines, but we will design the system in such a way that we are consistent with the times for all frequent customers. We will involve them in the process by directly communicating with them on a regular basis and gauge their overall enthusiasm about going to theme parks with the existing system in place. Our communication models will include mock-ups of what the application will look like on the phone, slideshows that will detail what our goals are in regards to lessening the burden for existing them park visitors as well as how this system is going to benefit the owners.<br><br>
+
+
+                        </div>
+<!--                  <div class="col-lg-6  ModalText"><img class="modalImg" src="images/UCD-interview.png"/></div>-->
+                    </div>
+                    
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-6  ModalText">
+                             <p>Design Process:</p>
+
+The design process included conducting contextual inquiries. We needed to conduct contextual inquiries in order to get the views of all our groups of stakeholders. We designed a list of questions and a screener questionnaire. We then recruited participants. Some of our groups of participants were children, moms, people managing the park and teens. Once we were done with the interviews, we had to analyze and consolidate our data. To do this, we had a brainstorming session where we made our affinity diagram as shown below from the data we had collected from the participants. <br><br>
+                      
+                        </div>
+                  <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Amuse_Affinity.png"/></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-12  ModalText">
+                            Once this was done, we made user profile personas for all the user profiles present, w.r.t. our scenario. The personas are as shown below. We made both the primary and the secondary personas and also came up with an anti-persona. These are as shown below
+                        </div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                    <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Amuse_Persona3.png"/></div>
+                  <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Amuse_Persona5.png"/></div>
+                    </div>
+                    <div class="row">
+                    <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Amuse_Persona4.png"/></div>
+                  <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Amuse_Persona2.png"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3  ModalText"></div>
+                    <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Amuse_Persona1.png"/></div>
+                  <div class="col-lg-3  ModalText"></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-12  ModalText">
+                           Now once we had the personas done, the next step for our team was to build the low-fi prototype. For this, we looked at our affinity diagram and personas to gather in all our data from it. From the data collected, we designed our screen’s content first, post which we drew the low-fi prototypes. The low-fi prototypes are as shown below.
+                        </div>
+                    </div>
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3  ModalText"></div>
+                    <div class="col-lg-6  ModalText"><img class="modalImg" src="images/Amuse_LoFi.png"/></div>
+                  <div class="col-lg-3  ModalText"></div>
+                    </div>
+                    
+                    <div class="ModalSpace">
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-12  ModalText">
+                           Future: The next steps for our team in this project, is to come up with hi-fi prototypes.
+                        </div>
+                    </div>
+                    </div>
+          
+          
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+<div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+                <div class="modal-body">
+                    <br><br>
+                    <img id="EZTitle" src="images/voice-title.png" />
+                    <br><br>
+                  <p class="ModalTitle">Voice Assistants Study</p>
+                    <p class="ModalLocation">RIT, Rochester, NY</p>
+                    <p class="ModalDuration">September 2017 - Present</p>
+                    
+                  <hr class="star-primary">
+                  <img id="ModalTitleIntern" class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
+              <div class="row">
+                        <div class="col-lg-6  ModalText">
+                            <p>Project description:</p>
+                            This project aims to see how voice assistants affect the sacademic productivity in RIT students.
+<br><br>
+<p>Problem:</p>
+    With growing technologies in the world today, there has been a growing market for voice assistants today for a variety of purposes. We wanted to check how this could affect the academic productivity in RIT students and also what are the problems faced especially by international students while using voice assistants.
+<br><br>
+                            <p>Research methodology:</p>
+Firstly, we have written two papers till date. One being the qualitative analysis to see how voice assistants affect the academic productivity of RIT students where we recruit participants and conduct semi-structured interviews. The second being the quantitative research analysis where we conduct a survey to see how voice assistants affect academic productivity and pose some questions which may particularly prove to be a problem for international students.
+We surveyed 37 people and analyzed the collected results post that. The last step was where we wrote two research papers.
+
+                        </div>
+                          <div class="col-lg-6 ModalText align-middle"><img class="modalImg" src="images/voice-interview.png"/></div>
+                    </div>
+                    
+                    </div>
+          
+          <div class="ModalSpace">
+                    </div>
+          <div class="repB">
+                  <div class="repBDiv" onClick="window.open('voice_paper1.pdf');"><img class="reportButton" src="images/paper_button.png"><br>
+              <span class="repBA">Click to download the Qualitative Research Paper</span></div>
+              <div class="repBDiv" onClick="window.open('voice_paper2.pdf');"><img class="reportButton" src="images/paper_button.png"><br>
+              <span class="repBA">Click to download the Quantitative Research Paper</span></div>
+              </div>
+          
+                    
+                    <div class="ModalSpace">
+                    </div>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                      Close</button>
+                    <div class="ModalSpace">
+                    </div>
+      </div>
+    </div>
+    
+    
+</body>
+
+	<!-- SCRIPTS -->
+	<script src="html5shiv.js"></script>
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="jquery-migrate-1.2.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="jquery.easing.1.3.js"></script>
+    <script src="jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery.fancybox.pack-v=2.1.5.js"></script>
+
+	<script src="script.js"></script>
+	
+	<!-- fancybox init -->
+	<script>
+	$(document).ready(function(e) {
+		var lis = $('.nav > li');
+		menu_focus( lis[0], 1 );
+		
+		$(".fancybox").fancybox({
+			padding: 10,
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+		});
+	
+	});
+	</script>
+    <script src="progressbar.js"></script>
+    <script src="progressbar.min.js"></script>
+    <script src="wheelnav.js"></script>
+    <script src="raphael.icons.min.js"></script>
+    <script src="raphael.min.js"></script>
+<script type="text/javascript" src="myJS.js"></script>
 </html>
