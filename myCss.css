@@ -536,6 +536,11 @@ top:5%;
     cursor: pointer;
 }
 
+.skilled hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width: 335px) {
     
