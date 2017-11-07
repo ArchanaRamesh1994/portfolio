@@ -253,14 +253,15 @@ $(document).ready(function() {
   var active4 = false;
 
     $('.filter').on('mousedown touchstart', function() {
+        
     
-    if (!active1) $(this).find('.test1').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'translate(-160px,-15px)'});
+    if (!active1) $(this).find('.test1').css({'background-color': 'rgba(22,28,29,0.7)', 'transform': 'translate(160px,-15px)'});
     else $(this).find('.test1').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'none'}); 
-     if (!active2) $(this).find('.test2').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'translate(-137px,75px)'});
+     if (!active2) $(this).find('.test2').css({'background-color': 'rgba(22,28,29,0.7)', 'transform': 'translate(137px,75px)'});
     else $(this).find('.test2').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'none'});
-      if (!active3) $(this).find('.test3').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'translate(-71px, 139px)'});
+      if (!active3) $(this).find('.test3').css({'background-color': 'rgba(22,28,29,0.7)', 'transform': 'translate(71px, 139px)'});
     else $(this).find('.test3').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'none'});
-      if (!active4) $(this).find('.test4').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'translate(20px,160px)'});
+      if (!active4) $(this).find('.test4').css({'background-color': 'rgba(22,28,29,0.7)', 'transform': 'translate(-20px,160px)'});
     else $(this).find('.test4').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'none'});
     active1 = !active1;
     active2 = !active2;
@@ -272,16 +273,24 @@ $(document).ready(function() {
 
 for(i=1;i<=4;i++){
 $(".test"+i).hover(function(){
-    $(this).css("background-color", "rgba(49,116,128,0.9)");
+ $(this).css("background-color", "rgba(42,121,134,0.7)");
+//    $(this).css("transition-delay","0s");
+//    $(this).css('testHover');
     }, function(){
-    $(this).css("background-color", "rgba(22,28,29,0.9)");
+    $(this).css("background-color", "rgba(22,28,29,0.7)");
 });
 }
 
+//$(".test1").hover(function(){
+//    $(this).css("background-color", "rgba(97,105,108,0.9)");
+//    }, function(){
+//    $(this).css("background-color", "rgba(22,28,29,0.9)");
+//});
+
 $(".mask2").hover(function(){
-    $(this).css("background-color", "#1a5a65");
+    $(this).css("background-color", "#268b9b");
     }, function(){
-    $(this).css("background-color", "#103238");
+    $(this).css("background-color", "#289caf");
 });
 
 
