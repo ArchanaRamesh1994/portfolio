@@ -313,13 +313,13 @@ margin-top: 3vw;
 }
 
 #WorkTitle {
-    float: left;
+    float: right;
     width: 80%;
  padding-top: 90px;  
 }
 
 #WorkSpace {
-    left: 13%;
+    right: 13%;
 }
 .circleImages{
     height: 30px;
@@ -361,11 +361,11 @@ margin-top: 3vw;
 /*    display: block;*/
 	right: 0%;
 	z-index: 7;
-    float:right;
+    float:left;
     padding: 0;
     margin: 0;
     margin-top: 7%;
-    margin-right: 2%;
+    margin-left: 3%;
     
 /*  top:15px;*/
 /*  left:15px;*/
@@ -385,7 +385,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   width:90%;
   height:90%;
 /*  background-color:#161c1d;*/
-    background-color:rgba(22,28,29,0.9);
+    background-color:rgba(22,28,29,0.7);
   border-radius:50%;
   position:absolute;
   color:white;
@@ -404,7 +404,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   width:90%;
   height:90%;
 /*  background-color:#161c1d;*/
-    background-color:rgba(22,28,29,0.9);
+    background-color:rgba(22,28,29,0.7);
   border-radius:50%;
   position:absolute;
   color:white;
@@ -415,7 +415,7 @@ top:5%;
     z-index:19;
   transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
     cursor:pointer;
-    line-height:60px;
+    line-height:15px;
     font-size: 15px;
     font-weight: 700;
 }
@@ -423,7 +423,7 @@ top:5%;
   width:90%;
   height:90%;
   /*  background-color:#161c1d;*/
-    background-color:rgba(22,28,29,0.9);
+    background-color:rgba(22,28,29,0.7);
   border-radius:50%;
   position:absolute;
   color:white;
@@ -442,7 +442,7 @@ top:5%;
   width:90%;
   height:90%;
   /*  background-color:#161c1d;*/
-    background-color:rgba(22,28,29,0.9);
+    background-color:rgba(22,28,29,0.7);
   border-radius:50%;
   position:absolute;
   color:white;
@@ -455,6 +455,10 @@ top:5%;
       line-height:50px;
     font-size: 15px;
     font-weight: 700;
+}
+
+.testHover{
+    background-color: green;
 }
 
 .mask2 {
@@ -473,7 +477,7 @@ top:5%;
     
   width:100px;
   height:100px;
-  background:#103238;
+  background:#289caf;
   border-radius:50%;
 /*  position:relative;*/
   z-index:21;
@@ -595,5 +599,4 @@ top:5%;
 /*        margin-right: 0px;*/
     }
 }
-
 
