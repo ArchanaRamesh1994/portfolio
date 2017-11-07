@@ -309,9 +309,9 @@ function showExperience(){
      $('html,body').animate({
         scrollTop: $("#slide-10").offset().top},
         'slow');
-    $(".mask2").html("<img class=\"circleImagesMask\" src=\"images/filterExp.png\">Experience");
-    $(".mask2").css("line-height","60px");
-    $(".mask2").css("font-size","18px");
+    $(".mask2").html("<img class=\"circleImagesMaskUp\" src=\"images/filterExp.png\"><br>Work Experience");
+    $(".mask2").css("line-height","15px");
+    $(".mask2").css("font-size","15px");
     
     
          $("#expCards").show();
