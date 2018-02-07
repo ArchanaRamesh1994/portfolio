@@ -3,6 +3,11 @@
         src: url("Mission-Script.otf");
 }
 
+.SectionTitle{
+    font-family: "mission";
+    font-size: 50px;
+}
+
 .align-middle10{
     margin-top: 10px;
 }
@@ -119,20 +124,21 @@
         z-index: 7;
 /*        top: 35%;*/
         left:5%;
-        font-size:  5vw;
+        font-size:  7vw;
         font-weight: 900;
         width:50%;
         margin-top: 10%;
         position: absolute; 
+         font-family: "mission";
     }
 #MainSubText { 
         position: absolute; 
         z-index: 7;
 /*        top: 200px;*/
         left:5%;
-        font-size:  2vw;
+        font-size:  1.7vw;
         width:50%;
-    margin-top: 16%;
+    margin-top: 18%;
     }
 
 #aboutMe{
