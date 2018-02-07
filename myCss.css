@@ -3,6 +3,10 @@
         src: url("Mission-Script.otf");
 }
 
+.text{
+    font-size: 13px;
+}
+
 .SectionTitle{
     font-family: "mission";
     font-size: 50px;
