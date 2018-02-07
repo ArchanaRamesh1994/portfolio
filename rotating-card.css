@@ -1,3 +1,7 @@
+@font-face {
+        font-family: "mission";
+        src: url("Mission-Script.otf");
+}
 body {
 /*	margin-top: 60px;*/
 	font-size: 14px;
@@ -144,6 +148,7 @@ box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
     text-align: center;
     text-transform: capitalize;
     font-size: 30px;
+    font-family: "mission";
 }
 .card h5{
     margin: 5px 0;
@@ -155,7 +160,7 @@ box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
     color: #797979;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
 }
 
@@ -186,13 +191,18 @@ box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
     padding: 15px 20px;
     height: 90px;
 }
+
+
+
 .card .motto{
     border-bottom: 1px solid #EEEEEE;
     color: #3e3e3e;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
     padding-bottom: 10px;
     text-align: center;
+    font-family: "mission";
+    
 }
 
 .card .stats-container{
