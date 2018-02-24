@@ -10,19 +10,56 @@ $('#imageBG').css({ 'left': startX + 'px'});
 //$('#index').css({ 'min-height': 1053 + 'px'});
 
 $(document).ready(function($){
+    
+//            var animateIndexPage = function(){
+//                
+////                while(true){
+//                setInterval(move3D, 1000)
+////                }
+//            };
+//        var mouseX = 0;
+//        var operation = 0;
+//          var move3D = function(){
+              
+              
+                
             $("#index").mousemove(function(e){
+                
+                
                 var mouseX = e.pageX - $('#index').offset().left;
-//                var mouseY = e.pageY - $('#index').offset().top;
+                var mouseY = e.pageY - $('#index').offset().top;
                 var totalX = $('#index').width();
-//                var totalY = $('#index').height();
+//              
+//              if (operation == 0){
+//                  if(mouseX == totalX){
+//                        mouseX--;
+//                      operation = 1;
+//                  }
+//                  else{
+//                    mouseX++;    
+//                  }  
+//              }
+//              else{
+//                  if(mouseX == 0){
+//                        mouseX++;
+//                      operation = 0;
+//                  }
+//                  else{
+//                    mouseX--;    
+//                  } 
+//              }
+                var totalY = $('#index').height();
                 var centerX = totalX / 2;
-//                var centerY = totalY / 2;
-                var shiftX = centerX - mouseX;
+                var centerY = totalY / 2;
+                var shiftX = (((centerX - mouseX)+(centerY - mouseY))/2);
 //                var shiftY = centerY - mouseY;
-
+//                console.log(totalX);
+//                console.log(mouseX);
                 var startX = ($('#index').width() / 2) - ($('#image1').width() / 2);
+                console.log(mouseX,mouseY,"---",shiftX);
+                
 //                var startY = ($('#index').height() / 2) - ($('#image1').height() / 2);
-//
+//          
 //                $('#image1').css('z-index') ;
 //                $('#image1').css({ 'left': startX + (shiftX/10) + 'px', 'top': startY + (shiftY/10) + 'px' });
 //                $('#image2').css({ 'left': startX + (shiftX/8) + 'px', 'top': startY + (shiftY/8) + 'px' });
@@ -30,17 +67,43 @@ $(document).ready(function($){
 //                $('#image4').css({ 'left': startX + (shiftX/8) + 'px', 'top': startY + (shiftY/8) + 'px' });
                 
                 
+//               transform: translate(350px,0);
+//    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+//    -o-transform: translate(350px,0); /** Opera **/
+//    -moz-transform: translate(350px,0); /** Firefox **/
+              
                 $('#image1').css('z-index') ;
                 $('#image1').css({ 'left': startX + (shiftX/10) + 'px'});
                 $('#image2').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/12) + 'px'});
                 $('#image3').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/15) + 'px'});
                 $('#image4').css({ 'left': (startX-($('#index').width()*0.075)) + (shiftX/20) + 'px'});
-            });
+              
+//              leftX = (totalX / 2)
+//              rightX = (totalX / 2) - totalX
+//              $('#image1').css('z-index');
+//              $('#image1').addClass('imageTranslate');
+//              $('#image1').css({
+//                  'transform': 'translate('+(leftX/10)+'px,0)',
+//    '-webkit-transform' : 'translate('+(leftX/10)+'px,0)',
+//    '-o-transform': 'translate('+(leftX/10)+'px,0)',
+//    '-moz-transform': 'translate('+(leftX/10)+'px,0)'
+//              });
+              
+              
+//                $('#image1').css({ 'left': startX + (shiftX/10) + 'px'});
+//                $('#image2').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/12) + 'px'});
+//                $('#image3').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/15) + 'px'});
+//                $('#image4').css({ 'left': (startX-($('#index').width()*0.075)) + (shiftX/20) + 'px'});
+//              
+              
+//            };
+                });
         });
+        
+//        animateIndexPage();
+//
+//});
 
-
-      
-             
         var limit = document.body.scrollHeight;
         var winHeight=window.innerHeight;
                     
@@ -435,3 +498,61 @@ $( ".test1" ).on( "click", showAll);
 $( ".test2" ).on( "click", showExperience);
 $( ".test3" ).on( "click", showDesign);
 $( ".test4" ).on( "click", showDev);
+
+
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
