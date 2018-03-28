@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<meta charset="utf-8" />
+
+<title>Places to see - Bangalore</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="zomatoAPI.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<script>
+		var placesList = [
+			{
+				latitude:12.951109,
+				longitude:77.584595,
+				title:"Lalbagh"
+			},
+
+			{
+				latitude:12.978566,
+				longitude:77.591645,
+				title:"Vidhan Soudha"
+			},
+
+			{
+				latitude:12.800662,
+				longitude:77.577058,
+				title:"Bannerghatta National Park"
+			},
+
+			{
+				latitude:12.990273,
+				longitude:77.592443,
+				title:"Cubbon Park"
+			},
+
+			{
+				latitude:12.959684,
+				longitude:77.573603,
+				title:"Tippu Sultan's Summer Palace"
+			},
+			{
+				latitude:12.984758, 
+				longitude:77.589506,
+				title:"Jawaharlal Nehru Planetarium"
+			},
+				
+			{
+				latitude:12.909787,
+				longitude:77.395715,
+				title:"Dodda Alada Mara"
+			},
+
+			{
+				latitude:12.963267,
+				longitude:77.576014,
+				title:"Bangalore fort"
+			},
+
+			{
+				latitude:12.989409,
+				longitude:77.580540,
+				title:"Karnataka Chitrakala Parishath"
+			},
+
+			{
+				latitude:12.834891,
+				longitude:77.400951,
+				title:"Wonderla"
+			},
+
+			{
+				latitude:12.689457,
+				longitude:76.647153,
+				title:"Melkote"
+			},
+
+			{
+				latitude:13.379923,
+				longitude:77.213234,
+				title:"Devarayana Durga"
+			},
+
+			{
+				latitude:12.116385,
+				longitude:77.777482,
+				title:"Hogenikkal Falls"
+			},
+
+			{
+				latitude:12.305011,
+				longitude:77.177629,
+				title:"Shivasamudram Falls"
+			},
+			{
+				latitude:12.427905,
+				longitude:76.678640,
+				title:"SriRangpatna"
+			}
+			];
+
+			var placesNames = []
+
+			for(var pi = 0; pi<placesList.length; pi++){
+				placesNames.push(placesList[pi].title);
+			}
+			var centerLatLong = {lat: 12.892616, lng: 77.203926};
+			var zoomLevel = 9;
+</script>
+
+<link rel="stylesheet" type="text/css"  href="index.css"/>
+</head>
+<body>
+
+<div id="navBar">
+<ul>
+  <li><img id="logo" src="images/bangalore_logo.png" alt="bang_logo"></li>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="places.html">Places to see</a></li>
+  <li><a href="eateries.html">Eateries</a></li>
+  <li><a href="shopping.html">Shopping</a></li>
+   <li><a href="resources.html">Resources</a></li>
+   <li><a class="weatherwidget-io" href="https://forecast7.com/en/12d9777d59/bengaluru/?unit=us" data-font="Roboto Slab" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-basecolor="" >Bengaluru, Karnataka, India</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script></li>
+</ul>
+    </div>
+    <div id="hB"></div>
+
+
+<div class="row">
+
+
+ <div class="pageTitle">
+   <h1>Places to see</h1>
+<div id="hB2"></div>
+</div>
+
+<div id = "column1" class="column">
+
+
+<div id="0" class="divItem" style="margin-top:0px;">
+<div class="attractions">
+<h2>1. LalBagh</h2>
+<div class="tripAdvisor">
+<div id="TA_socialButtonBubbles876" class="TA_socialButtonBubbles">
+<ul id="leeUKh" class="TA_links WuZ6TENJs">
+<li id="LWHTyeVG8Hzq" class="izz6WzPnM">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d631367-Reviews-Lalbagh_Botanical_Garden-Bengaluru_Bangalore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=876&amp;locationId=631367&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>Lalbabh is a famous botanical garden in south bangalore. It's famous for its glasshouse, which hosts two flower shows every year. Lalbabh has India's largest collection of Tropical plants, along with a lake and a hill which are used for recreational purposes.</p>
+</div>
+<div class="image" style="margin-top:0px;">
+<img src="images/a1.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+<div id="1" class="divItem">
+<div class="attractions">
+<h2>2. Vidhan Soudha</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles75" class="TA_socialButtonBubbles">
+<ul id="QfDtqFRP" class="TA_links pdDntnj">
+<li id="D8PzO4OAz" class="GNU4T9Esvn">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d2587646-Reviews-Vidhana_Soudha_and_Attara_Kacheri-Bengaluru_Bangalore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=75&amp;locationId=2587646&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>Vidhan Soudha located in Bangalore, is the seat of the state legislature. The Dravidian style construction was completed in 1956. It is the largest legislative building in India. The Karnataka government has constructed a replica of Vidhan Soudha, called Vikas Soudha, to the south of the building.</p>
+</div>
+<div class="image">
+<img src="images/a2.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="2" class="divItem">
+<div class="attractions">
+<h2>3. Bannerghatta National Park</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles540" class="TA_socialButtonBubbles">
+<ul id="3cC5jAbxkQHe" class="TA_links eIi286I3G3">
+<li id="SLmAPINnE" class="iXf5Stxp7pmx">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d1006969-Reviews-Bannerghatta_National_Park-Bengaluru_Bangalore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=540&amp;locationId=1006969&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>Bannerghatta National Park was founded in 1970 and it became a national park in 1974. This is a popular tourist destination with a zoo, a safari, butterfly corner, snake house, tigers etc. It also has ancient temples inside the reserve. It is also a great place for trekking and hiking for the people who love adventure.</p>
+</div>
+<div class="image">
+<img src="images/a3.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="3" class="divItem">
+<div class="attractions">
+<h2>4. Cubbon Park</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles323" class="TA_socialButtonBubbles">
+<ul id="1oz0NURSns" class="TA_links AIjQZt">
+<li id="sINzwi8w" class="Extgggl">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d2587630-Reviews-Cubbon_Park-Bengaluru_Bangalore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=323&amp;locationId=2587630&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>This is a park over 100 years old and spreads over 300 acres. It is located near the central legislative area. They also have a toy train running through many parts of the park. The park has many buildings, some of them being the Central Library, Bangalore High court, Iyer Hall, etc. There is also a Rose garden and an aquarium in the park's premises. </p>
+</div>
+<div class="image">
+<img src="images/a4.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+
+
+<div id="4" class="divItem">
+<div class="attractions">
+<h2>5. Tippu Sultan's Summer Palace</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles642" class="TA_socialButtonBubbles">
+<ul id="T4K09izP" class="TA_links dBgQrgf">
+<li id="NnYcFAaPP3" class="bwjMUcNJ9bzf">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d631366-Reviews-Tipu_Sultan_Fort_and_Palace_Bangalore_KR_Market-Bengaluru_Bangalore_District_Karna.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=642&amp;locationId=631366&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>This is an example of Indo Islamic architecture. It was the summer home of the ruler of Mysore- Tippu Sultan.</p>
+</div>
+<div class="image">
+<img src="images/a5.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="5" class="divItem">
+<div class="attractions">
+<h2>6. Jawaharlal Nehru Planetarium</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles298" class="TA_socialButtonBubbles">
+<ul id="j6YsTaD" class="TA_links XjFIU9eCO">
+<li id="kuF7srsB40ag" class="5iFWVsqCJZc2">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d3218285-Reviews-Jawahar_Lal_Nehru_Planetarium-Bengaluru_Bangalore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=298&amp;locationId=3218285&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>Jawaharlal Nehru Planetarium located in the center of the city, has a science park and a science center. The planetarium also runs numerous shows throughout the day. In addition, they also organize programs for watching astronomical events like solar eclipse, lunar eclipse etc.</p>
+</div>
+<div class="image">
+<img src="images/a6.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="6" class="divItem">
+<div class="attractions">
+<h2>7. Dodda Alada Mara</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles486" class="TA_socialButtonBubbles">
+<ul id="Uo0qC5H" class="TA_links bWweToyS">
+<li id="QXoNMNCLxY" class="oqrdKYiIm">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d2508822-Reviews-Big_Banyan_Tree-Bengaluru_Bangalore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=486&amp;locationId=2508822&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>It literally traslates to "Big Banyon Tree". This Banyon tree is 400 years old, covering almost 3 acres. It is a very famous tourist spot.</p>
+</div>
+<div class="image">
+<img src="images/a8.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="7" class="divItem">
+<div class="attractions">
+<h2>8. Bangalore fort</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles849" class="TA_socialButtonBubbles">
+<ul id="AmopLz" class="TA_links HBLwyOU">
+<li id="26CDxRVgZYN" class="UIBrGYJtoz">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g7929791-d8077208-Reviews-Kempegowda_Fort-Magadi_Ramanagara_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=849&amp;locationId=8077208&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+
+</div>
+
+<p>This was a mud fort that began in 1537. The builder of this was Kempe Gowda - the founder of Bangalore, who was also a part of the Vijayanagara empire. Haider Ali then replaced the mud fort with a stone fort in 1791. This fort was later captured by th British east India company. This is a famous tourist spot.</p>
+</div>
+<div class="image">
+<img src="images/a9.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+
+
+<div id="8" class="divItem">
+<div class="attractions">
+<h2>9. Karnataka Chitrakala Parishath</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles278" class="TA_socialButtonBubbles">
+<ul id="vK44RKNFfOON" class="TA_links bARiZuupc">
+<li id="dxfIHdqCS" class="S4Mqnuu0ci">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d2587763-Reviews-Karnataka_Chitrakala_Parishat-Bengaluru_Bangalore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=278&amp;locationId=2587763&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>This is a visual arts complex located in Bangalore. It has 18 galleries and is "must go" location for all art lovers. 13 of those galleries have permanent paintings, sculptures and folklore.</p>
+</div>
+<div class="image">
+<img src="images/a10.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="9" class="divItem">
+<div class="attractions">
+<h2>10. Wonderla</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles520" class="TA_socialButtonBubbles">
+<ul id="ljtFeVAAP7" class="TA_links QBf0NgUcJAG">
+<li id="qPJoJIs" class="HHLfEvF">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g297628-d1603947-Reviews-Wonderla_Amusement_Park-Bengaluru_Bangalore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=520&amp;locationId=1603947&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script></div>
+
+<p>This is one of the largest amusement parks in India. It has both land and water rides. For someone who loves thrill and fun, this is the place to be. It has something for all age groups.</p>
+</div>
+<div class="image">
+<img src="images/a11.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="10" class="divItem">
+<div class="attractions">
+<h2>11. Melkote</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles994" class="TA_socialButtonBubbles">
+<ul id="9Mb4OD" class="TA_links cao3JCSAD">
+<li id="Y2FISi0Rzt3x" class="sAYqTX36hrf">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g304553-d1200750-Reviews-Melkote-Mysuru_Mysore_Mysore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=994&amp;locationId=1200750&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>This is about 83 miles from Bangalore and a very sacred place in Karnataka. It was built on the hills overlooking the River Kaveri valley. It has the Cheluvanarayanaswamy temple on th foot of the hill and the Yoga narasimha temple on top of the hill. The temple at the top has caves and also a deep pond, where people centuries ago were set to take baths every day before going to the temple. Melkote is also home to the Sanskrit research academy which has a collection of transcripts. There are many ponds and waterfalls nearby. </p>
+</div>
+<div class="image" style="margin-top:70px;">
+<img src="images/a12.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="11" class="divItem">
+<div class="attractions">
+<h2>12. Devarayana Durga</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles511" class="TA_socialButtonBubbles">
+<ul id="NIF61s" class="TA_links 6pI7GllRDZgw">
+<li id="NjbF0Uu5rsd" class="ziXBl3mG6Fa">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g858478-d3172281-Reviews-Devarayana_Durga-Tumkur_Tumkur_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=511&amp;locationId=3172281&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script></div>
+
+<p>This place has the famous Yoginarasimha and Bhoginarasimha temples located on the hills, sourrounded by forests. It also has a pond and caves located in the temple.</p>
+</div>
+<div class="image">
+<img src="images/a13.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="12" class="divItem">
+<div class="attractions">
+<h2>13. Hogenikkal Falls</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles527" class="TA_socialButtonBubbles">
+<ul id="svzGP5KMoY" class="TA_links f0qorilgsV">
+<li id="a6Urloekm" class="20AkiTEzGDI">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g2288642-d1223598-Reviews-Hogenakkal_Falls-Dharmapuri_Dharmapuri_District_Tamil_Nadu.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=527&amp;locationId=1223598&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>This is a waterfall located 110 miles from bangalore on the Kaveri river. It is sometimes called the Niagara falls of India. It is known for its medical baths and boat rides. It is a famous tourist spot.</p>
+</div>
+<div class="image">
+<img src="images/a14.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="13" class="divItem">
+<div class="attractions">
+<h2>14. Shivasamudram Falls</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles622" class="TA_socialButtonBubbles">
+<ul id="qFc9BHhf" class="TA_links 3Uq4sHA">
+<li id="A9Ki9qwtk2" class="l5DUPj">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g7983271-d1204461-Reviews-Shivasamudram_Falls-Belakavadi_Mandya_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=622&amp;locationId=1204461&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+</div>
+
+<p>The Shivasamudram falls is located on the banks of river Kaveri. A group of ancient temples are located near the falls. It is also the location of one of the first hydro-electric power stations in Asia, started in 1902.</p>
+</div>
+<div class="image">
+<img src="images/a15.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="14" class="divItem">
+<div class="attractions">
+<h2>15. SriRangpatna</h2>
+
+<div class="tripAdvisor"><div id="TA_socialButtonBubbles620" class="TA_socialButtonBubbles">
+<ul id="AwTZiYyNYr" class="TA_links 5O4q2WV">
+<li id="FwJwDuNb7Xw" class="I7GXWjUr8UG">
+<a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g304553-d1021194-Reviews-Srirangapatna-Mysuru_Mysore_Mysore_District_Karnataka.html"><img alt="tripadvisor" src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+</li>
+</ul>
+</div>
+<script async src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=620&amp;locationId=1021194&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script></div>
+
+<p>This town has political, Historical and cultural significance. The entire town is enclosed by river Kaveri to form an island. The town gets its name from the Ranganathaswamy temple and the Kaveri flows around the temple. People visit to take a holy dip in the river before going to the temple. The temple has both the Hoysala and Vijayanagara styles of architecture. There are many more places to visit in the town like the Srirangapatna fort (where Tipu Sultan was killed by the Britishers, and also a place where the Mysore rulers kept the British soldiers as prisoners), Bailey's Dungeon (place where Tipu Sultan imprisoned British soldiers), Ranganathittu bird sanctuary (this is a breeding site for many species of birds and has a lake in which people go boating. This lake also has crocodiles!), Tipu Sultan Gumbaz, etc. </p>
+</div>
+<div class="image"  style="margin-top:100px;">
+<img src="images/a18.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+</div>
+
+<div class="columnRight" style="position:absolute; ">
+
+<div id="map"></div>
+   <script src="maps.js">
+		</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWmNs9qpaK9rB5eM7OlZ1CbAk1lVaXT_w&callback=initMap"
+		   async defer>
+
+		</script>
+		
+
+</div>
+
+</div>
+
+</body>
+</html>
+
+

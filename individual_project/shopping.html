@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<meta charset="utf-8" />
+
+<title>Shopping - Bangalore</title>
+<script src="jquery-3.3.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<script>
+
+    var placesList = [
+      {
+        latitude:12.917615, 
+        longitude:77.582171,
+        title:"Nalli Silks"
+      },
+
+      {
+        latitude:12.980216, 
+        longitude:77.609845,
+        title:"Commertial Street"
+      },
+
+      {
+        latitude:12.939582,
+        longitude:77.571295,
+        title:"Bhavani Kangan Store"
+      },
+
+      {
+        latitude:13.010936, 
+        longitude:77.554983,
+        title:"Orion Mall"
+      },
+
+      {
+        latitude:12.926574,
+        longitude: 77.585836,
+        title:"GRT"
+      },
+
+      {
+        latitude:12.934815, 
+        longitude:77.612383,
+        title:"Forum Mall"
+      }
+      
+      ];
+
+      var placesNames = [];
+      for(var pi = 0; pi<placesList.length; pi++){
+        placesNames.push(placesList[pi].title);
+      }
+      var centerLatLong = {lat: 12.973283, lng: 77.584398};
+      var zoomLevel = 12;
+</script>
+
+<link rel="stylesheet" type="text/css"  href="index.css"/>
+</head>
+<body>
+<div id="navBar">
+<ul>
+  <li><img id="logo" src="images/bangalore_logo.png" alt="bang_logo"></li>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="places.html">Places to see</a></li>
+  <li><a href="eateries.html">Eateries</a></li>
+  <li><a href="shopping.html">Shopping</a></li>
+   <li><a href="resources.html">Resources</a></li>
+   <li><a class="weatherwidget-io" href="https://forecast7.com/en/12d9777d59/bengaluru/?unit=us" data-font="Roboto Slab" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-basecolor="" >Bengaluru, Karnataka, India</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script></li>
+</ul>
+    </div>
+    <div id="hB"></div>
+
+<div class="row">
+ <div class="pageTitle">
+   <h1> Shopping</h1>
+   <div id="hB2"></div>
+</div>
+<div id="column1" class="column">
+
+
+<div id="0" class="divItem" style="margin-top:0px;">
+<div class="attractions">
+<h2>1. Nalli Silks</h2>
+<div class="tripAdvisor"></div>
+<p>This is a very big store known for its beautiful sarees. Its famous for its Kancheepuram sarees. It was founded in 1928 in Chennai and has expanded since then.</p>
+</div>
+<div class="image" style="margin-top:0px;">
+<img src="images/s1.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+<div id="1" class="divItem">
+<div class="attractions">
+<h2>2. Commertial Street</h2>
+<div class="tripAdvisor"></div>
+<p>This street is known to have a lot of shops and the prices are pretty reasonable.</p>
+</div>
+<div class="image">
+<img src="images/s2.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="2" class="divItem">
+<div class="attractions">
+<h2>3. Bhavani Kangan Store</h2>
+<div class="tripAdvisor"></div>
+<p>This store is very famous for its jewellery (bangles, necklaces, earrings, etc.)</p>
+</div>
+<div class="image">
+<img src="images/s3.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="3" class="divItem">
+<div class="attractions">
+<h2>4. Orion Mall</h2>
+<div class="tripAdvisor"></div>
+<p>This is a very huge mall and has lots of brands to shop for both western and traditional clothing.</p>
+</div>
+<div class="image">
+<img src="images/s4.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+
+
+<div id="4" class="divItem">
+<div class="attractions">
+<h2>5. GRT</h2>
+<div class="tripAdvisor"></div>
+<p>GRT is a very famous store known for its gold ornaments. People go to buy traditional gold necklaces, bangles, earrings etc.</p>
+</div>
+<div class="image">
+<img src="images/s5.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="5" class="divItem">
+<div class="attractions">
+<h2>6. Forum Mall</h2>
+<div class="tripAdvisor"></div>
+<p>This is a very huge mall and has lots of brands to shop for both western and traditional clothing.</p>
+</div>
+<div class="image">
+<img src="images/s6.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+</div>
+
+<div class="columnRight" style="position:absolute; ">
+<!-- <div style="height:100%; width: 40%; float:right; overflow:scroll; position:relative;"> -->
+<div id="map"></div>
+   <script src="maps.js">
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWmNs9qpaK9rB5eM7OlZ1CbAk1lVaXT_w&callback=initMap"
+       async defer>
+
+    </script>
+    
+
+</div>
+
+</div>
+</body>
+</html>
+
+

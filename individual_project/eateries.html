@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<meta charset="utf-8" />
+
+<title>Eateries - Bangalore</title>
+<script src="jquery-3.3.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<script>
+
+		var res_ids = [51065,52098,51214,53317,54329,51956,52294,56595,57424,52228,50067,53220]
+		
+		for(var Zi =0; Zi<res_ids.length;Zi++){
+			$.ajax({
+  type: "GET", 
+  headers: {
+  	
+  	'X-Zomato-API-Key': '59d188d45922707a0596647b8079b6b5'
+  	
+  },
+  url: 'https://developers.zomato.com/api/v2.1/restaurant',
+  dataType: 'json', 
+  data: {
+     
+     res_id: res_ids[Zi],
+  },
+  processData: true,
+  success: function(data) {
+    
+    var ZINDEX = res_ids.indexOf(parseInt(""+data.R.res_id));
+    document.querySelector("#rate"+ZINDEX).innerHTML = "<br><a target=\"_blank\" class=\"ratingAnchor\" href="+data.url+"><img src=\"zomato.jpg\" style=\"height:35px; width:70px; float: left;\"><div class=\"rating\"><b>"+data.user_rating.aggregate_rating+"</b></div></a>  <div class=\"cuisine\"><b>Cuisines:</b> "+data.cuisines+"</div>";
+    
+    
+  }
+});
+			
+		}
+
+
+		var placesList = [
+			{
+				latitude:12.945417,
+				longitude:77.571364,
+				title:"Vidhyarthi Bhavan"
+			},
+
+			{
+				latitude:12.955849,
+				longitude:77.568650,
+				title:"Brahmin's Coffee Bar"
+			},
+
+			{
+				latitude:12.931083,
+				longitude:77.581152,
+				title:"Hotel Nandhini"
+			},
+
+			{
+				latitude:12.925160,
+				longitude:77.583735,
+				title:"Sri Venkateshwara Sweet-Meat Stall"
+			},
+
+			{
+				latitude:12.944553,
+				longitude:77.572634,
+				title:"Shiv Sagar"
+			},
+
+			{
+				latitude:12.954191,
+				longitude:77.577689,
+				title:"Food Street"
+			},
+
+			{
+				latitude:12.920426,
+				longitude:77.583510,
+				title:"Main land China"
+			},
+
+			{
+				latitude:12.924807,
+				longitude:77.586621,
+				title:"Adyar Ananda Bhavan"
+			},
+
+			{
+				latitude:12.971934,
+				longitude:77.595833,
+				title:"UB City"
+			},
+
+			{
+				latitude:12.934658,
+				longitude:77.612665,
+				title:"Punjab Grill"
+			},
+
+			{
+				latitude:12.911917,
+				longitude:77.595895,
+				title:"Barbeque Nation"
+			},
+
+			{
+				latitude:12.930980,
+				longitude:77.581024,
+				title:"Anand Sweets"
+			}
+
+			
+			];
+
+			var placesNames = [];
+			for(var pi = 0; pi<placesList.length; pi++){
+				placesNames.push(placesList[pi].title);
+			}
+
+			var centerLatLong = {lat: 12.949745, lng: 77.597255};
+			var zoomLevel = 13;
+</script>
+
+<link rel="stylesheet" type="text/css"  href="index.css"/>
+</head>
+<body>
+
+<div id="navBar">
+<ul>
+  <li><img id="logo" src="images/bangalore_logo.png"  alt="bang_logo"></li>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="places.html">Places to see</a></li>
+  <li><a href="eateries.html">Eateries</a></li>
+  <li><a href="shopping.html">Shopping</a></li>
+   <li><a href="resources.html">Resources</a></li>
+   <li><a class="weatherwidget-io" href="https://forecast7.com/en/12d9777d59/bengaluru/?unit=us" data-font="Roboto Slab" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-basecolor="" >Bengaluru, Karnataka, India</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script></li>
+</ul>
+    </div>
+    <div id="hB"></div>
+
+<div class="row">
+
+ <div class="pageTitle">
+   <h1> Eateries</h1>
+   <div id="hB2"></div>
+</div>
+<div id = "column1" class="column">
+
+
+<div id="0" class="divItem" style="margin-top:0px;">
+<div class="attractions">
+<h2>1. Vidhyarthi Bhavan <span id="rate0"></span></h2>
+
+<p>This place was opened in 1943 and is set to have the best Masala dosas in the city. It is always crowded, and you cannot ever get in there without waiting. Their Masala dosas are very unique and the restaurant serves a total of only 3 or 4 dishes and coffee. Bangalore is know for its Idlis and dosas (South Indian food).</p>
+</div>
+<div class="image" style="margin-top:0px;">
+<img src="images/e1.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+<div id="1" class="divItem">
+<div class="attractions">
+<h2>2. Brahmin's Coffee Bar <span id="rate1"></span></h2>
+
+<p>This place was opened in the 1960s and is set to have the best Idli, Vada Chutni in the city. Their Chutney is very unique and very tasty. The place is also known for good coffee.</p>
+</div>
+<div class="image">
+<img src="images/e2.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="2" class="divItem">
+<div class="attractions">
+<h2>3. Hotel Nandhini <span id="rate2"></span></h2>
+<p>This hotel was set up in 1989 and is known famously for its Andhra cuisine/ Andhra meals. The food is very unique, spicy and delicious.</p>
+</div>
+<div class="image">
+<img src="images/e3.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="3" class="divItem">
+<div class="attractions">
+<h2>4. Sri Venkateshwara Sweet Meat stall <span id="rate3"></span></h2>
+<p>This was initially started in 1954 and then expanded. It is very well known for its chaats like pani puri, dahi puri etc. It is also very well known for its sweets.</p>
+</div>
+<div class="image">
+<img src="images/e4.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+
+
+<div id="4" class="divItem">
+<div class="attractions">
+<h2>5. Shiv Sagar <span id="rate4"></span></h2>
+<p>This place came into being in the 1990s. It is very well known for its South and North Indian food. I personally love the gobi manchurian and paneer butter masala the best.</p>
+</div>
+<div class="image">
+<img src="images/e5.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="5" class="divItem">
+<div class="attractions">
+<h2>6. Food Street <span id="rate5"></span></h2>
+<p>This is a street filled with stalls of food on the whole street and has South Indian cuisine, chaats, street food etc. The food here is just amazing and this street is so crowded on weekends, that you won't get a chance to step a foot inside.</p>
+</div>
+<div class="image">
+<img src="images/e6.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="6" class="divItem">
+<div class="attractions">
+<h2>7. Mainland China <span id="rate6"></span></h2>
+<p>This is an Indo-Chinese restaurant which is very famous for its Indo-Chinese food and has a lot of vegetarian options too.</p>
+</div>
+<div class="image">
+<img src="images/e7.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="7" class="divItem">
+<div class="attractions">
+<h2>8. Adyar Ananda Bhavan <span id="rate7"></span></h2>
+<p>This is a South Indian restaurant whose origin is from Tamil Nadu. It's very famous for its Sambar and Vada and many other dishes.</p>
+</div>
+<div class="image">
+<img src="images/e8.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="8" class="divItem">
+<div class="attractions">
+<h2>9. UB City <span id="rate8"></span></h2>
+<p>This is a very high-class mall and has an open setting on its roof with a lot of high-end restaurants and bars (all kinds of cuisines) and live music.</p>
+</div>
+<div class="image">
+<img src="images/e9.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+
+
+<div id="9" class="divItem">
+<div class="attractions">
+<h2>10. Punjab Grill <span id="rate9"></span></h2>
+<p>This is a very nice punjabi restaurant with spicy and delicious Punjabi dishes. They have added a lot of innovation into some of their dishes.</p>
+</div>
+<div class="image">
+<img src="images/e10.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="10" class="divItem">
+<div class="attractions">
+<h2>11. Barbeque Nation <span id="rate10"></span></h2>
+<p>This is a classy restaurant which serves barbeque and a lot of other dishes along with a north Indian buffet. They have a wide variety of innovative appetizers and there is a wide variety even for vegetarians.</p>
+</div>
+<div class="image">
+<img src="images/e11.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+
+<div id="11" class="divItem">
+<div class="attractions">
+<h2>12. Anand Sweets <span id="rate11"></span></h2>
+<p>This place is very well known for its sweets and chaats. I love the pani puri the best over here. </p>
+</div>
+<div class="image" style="">
+<img src="images/e12.jpg" class="listingPic" alt="halo valid" title="halovalid" />
+</div>
+</div>
+
+</div>
+
+<div class="columnRight" style="position:absolute; ">
+
+<div id="map"></div>
+   <script src="maps.js">
+		</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWmNs9qpaK9rB5eM7OlZ1CbAk1lVaXT_w&callback=initMap"
+		   async defer>
+
+		</script>
+		
+
+</div>
+
+</div>
+</body>
+</html>
+
+

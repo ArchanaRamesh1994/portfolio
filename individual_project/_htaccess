@@ -1,0 +1,3 @@
+ErrorDocument 404 /ar2693/645/project3/error.html
+DirectoryIndex noterror.html
+
