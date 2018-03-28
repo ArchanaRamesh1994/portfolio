@@ -1,3 +1,4 @@
+
 var startX = ($('#index').width() / 2) - ($('#image1').width() / 2);              
 $('#image1').css('z-index') ;
 $('#image1').css({ 'left': startX + 'px'});
@@ -389,6 +390,9 @@ function showExperience(){
     if($("#devCards").is(":visible")){
        $( "#devCards" ).hide();
     }
+    if($("#devCards1").is(":visible")){
+       $( "#devCards1" ).hide();
+    }
    
 }
 
@@ -409,6 +413,9 @@ function showDesign(){
         $("#designCards2").animateCss('bounceIn');
     if($("#devCards").is(":visible")){
        $( "#devCards" ).hide();
+    }
+    if($("#devCards1").is(":visible")){
+       $( "#devCards1" ).hide();
     }
 }
 
@@ -432,6 +439,8 @@ function showDev(){
     }
        $( "#devCards" ).show();
         $("#devCards").animateCss('bounceIn');
+    $( "#devCards1" ).show();
+        $("#devCards1").animateCss('bounceIn');
 }
 
 
@@ -447,6 +456,8 @@ function showAllCards(){
         $("#designCards2").animateCss('bounceIn');
         $( "#devCards" ).show();
         $("#devCards").animateCss('bounceIn');
+    $( "#devCards1" ).show();
+        $("#devCards1").animateCss('bounceIn');
 }
 
 function showAll(){
@@ -491,6 +502,7 @@ $("#expCards").hide();
 $("#designCards1").hide();
 $("#designCards2").hide();
 $("#devCards").hide();
+$("#devCards1").hide();
 
 $("#slide-10").css("height",700+'px');
 

@@ -98,6 +98,11 @@
 		font-weight: 800;
 }
 
+.linkWeb{
+    color:#2A3354;
+    
+}
+
 #index { height: 100%; width:100%; max-width: 100%;
 }
 /*
@@ -173,6 +178,10 @@
     margin: auto;
     font-size:20px;
     width:75%;
+    text-align: center;
+}
+
+.divCenter{
     text-align: center;
 }
 
@@ -282,6 +291,9 @@
 .modalImg {
     width: 90%;
 }
+.modalImg2{
+    width: 100%;
+}
 .ModalText {
     text-align: left;
     font-size: 20px;
@@ -316,6 +328,14 @@
 }
 
 #EZTitle {
+    width: 30%;
+}
+
+#BangTitleImg {
+    width: 20%;
+}
+
+#PullTitleImg {
     width: 30%;
 }
 
@@ -628,6 +648,23 @@ top:5%;
     
     margin: auto;
 }
+
+.webButton{
+/*    background-image: url("images/report_button.png");*/
+/*    width: 200px;*/
+/*    height: 120px;*/
+/*
+    background-size: 100% 100%;
+    
+*/
+    text-align: center;
+/*    margin: auto;*/
+}
+
+#webImg:hover{
+    content:url("images/paper_button_hover.png");
+}
+
 
 .repB{
     width:100%;
