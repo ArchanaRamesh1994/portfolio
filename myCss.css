@@ -506,7 +506,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   width:90%;
   height:90%;
 /*  background-color:#161c1d;*/
-    background-color:rgba(22,28,29,0.7);
+    background-color:rgba(42, 168, 187,0.7);
   border-radius:50%;
   position:absolute;
   color:white;
@@ -598,7 +598,7 @@ top:5%;
     
   width:100px;
   height:100px;
-  background:#289caf;
+  background:#218291;
   border-radius:50%;
 /*  position:relative;*/
   z-index:21;

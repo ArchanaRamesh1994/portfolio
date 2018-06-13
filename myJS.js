@@ -1,16 +1,32 @@
 
-var startX = ($('#index').width() / 2) - ($('#image1').width() / 2);              
+var startX = ($('#index').width() / 2) - ($('#image1').width() / 2); 
+var startY = ($('#index').height() / 2) - ($('#image1').height() / 2);
 $('#image1').css('z-index') ;
 $('#image1').css({ 'left': startX + 'px'});
-$('#image2').css({ 'left': (startX+($('#index').width()*0.075))  + 'px'});
-$('#image3').css({ 'left': (startX+($('#index').width()*0.075)) + 'px'});
-$('#image4').css({ 'left': (startX-($('#index').width()*0.075)) + 'px'});
+$('#image2').css({ 'left': startX + 100 + 'px'});
+$('#image3').css({ 'left': startX + 100 + 'px'});
+$('#image4').css({ 'left': startX + 'px'});
+//$('#image2').css({ 'left': (startX+($('#index').width()*0.075))  + 'px'});
+//$('#image3').css({ 'left': (startX+($('#index').width()*0.075)) + 'px'});
+//$('#image4').css({ 'left': (startX-($('#index').width()*0.075)) + 'px'});
 $('#imageBG').css({ 'left': startX + 'px'});
+
+var start1 = startX; 
+var start2 = startX + 100;//+($('#index').width()*0.075); 
+var start3 = startX + 100;//+($('#index').width()*0.075); 
+var start4 = startX;//+($('#index').width()*0.075); 
+
+
 //$('#imageInvi').css({ 'top': '0px'});
 
 //$('#index').css({ 'min-height': 1053 + 'px'});
 
 $(document).ready(function($){
+    
+     animateDiv();
+    
+    
+    
     
 //            var animateIndexPage = function(){
 //                
@@ -24,86 +40,139 @@ $(document).ready(function($){
               
               
                 
-            $("#index").mousemove(function(e){
-                
-                
-                var mouseX = e.pageX - $('#index').offset().left;
-                var mouseY = e.pageY - $('#index').offset().top;
-                var totalX = $('#index').width();
+//            $("#index").mousemove(function(e){
+//                
+//                
+//                var mouseX = e.pageX - $('#index').offset().left;
+//                var mouseY = e.pageY - $('#index').offset().top;
+//                var totalX = $('#index').width();
+////              
+////              if (operation == 0){
+////                  if(mouseX == totalX){
+////                        mouseX--;
+////                      operation = 1;
+////                  }
+////                  else{
+////                    mouseX++;    
+////                  }  
+////              }
+////              else{
+////                  if(mouseX == 0){
+////                        mouseX++;
+////                      operation = 0;
+////                  }
+////                  else{
+////                    mouseX--;    
+////                  } 
+////              }
+//                var totalY = $('#index').height();
+//                var centerX = totalX / 2;
+//                var centerY = totalY / 2;
+//                var shiftX = (((centerX - mouseX)+(centerY - mouseY))/2);
+////                var shiftY = centerY - mouseY;
+////                console.log(totalX);
+////                console.log(mouseX);
+//                var startX = ($('#index').width() / 2) - ($('#image1').width() / 2);
+//                console.log(mouseX,mouseY,"---",shiftX);
+//                
+////                var startY = ($('#index').height() / 2) - ($('#image1').height() / 2);
+////          
+////                $('#image1').css('z-index') ;
+////                $('#image1').css({ 'left': startX + (shiftX/10) + 'px', 'top': startY + (shiftY/10) + 'px' });
+////                $('#image2').css({ 'left': startX + (shiftX/8) + 'px', 'top': startY + (shiftY/8) + 'px' });
+////                $('#image3').css({ 'left': startX + (shiftX/6) + 'px', 'top': startY + (shiftY/6) + 'px' });
+////                $('#image4').css({ 'left': startX + (shiftX/8) + 'px', 'top': startY + (shiftY/8) + 'px' });
+//                
+//                
+////               transform: translate(350px,0);
+////    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+////    -o-transform: translate(350px,0); /** Opera **/
+////    -moz-transform: translate(350px,0); /** Firefox **/
 //              
-//              if (operation == 0){
-//                  if(mouseX == totalX){
-//                        mouseX--;
-//                      operation = 1;
-//                  }
-//                  else{
-//                    mouseX++;    
-//                  }  
-//              }
-//              else{
-//                  if(mouseX == 0){
-//                        mouseX++;
-//                      operation = 0;
-//                  }
-//                  else{
-//                    mouseX--;    
-//                  } 
-//              }
-                var totalY = $('#index').height();
-                var centerX = totalX / 2;
-                var centerY = totalY / 2;
-                var shiftX = (((centerX - mouseX)+(centerY - mouseY))/2);
-//                var shiftY = centerY - mouseY;
-//                console.log(totalX);
-//                console.log(mouseX);
-                var startX = ($('#index').width() / 2) - ($('#image1').width() / 2);
-                console.log(mouseX,mouseY,"---",shiftX);
-                
-//                var startY = ($('#index').height() / 2) - ($('#image1').height() / 2);
-//          
 //                $('#image1').css('z-index') ;
-//                $('#image1').css({ 'left': startX + (shiftX/10) + 'px', 'top': startY + (shiftY/10) + 'px' });
-//                $('#image2').css({ 'left': startX + (shiftX/8) + 'px', 'top': startY + (shiftY/8) + 'px' });
-//                $('#image3').css({ 'left': startX + (shiftX/6) + 'px', 'top': startY + (shiftY/6) + 'px' });
-//                $('#image4').css({ 'left': startX + (shiftX/8) + 'px', 'top': startY + (shiftY/8) + 'px' });
-                
-                
-//               transform: translate(350px,0);
-//    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
-//    -o-transform: translate(350px,0); /** Opera **/
-//    -moz-transform: translate(350px,0); /** Firefox **/
-              
-                $('#image1').css('z-index') ;
-                $('#image1').css({ 'left': startX + (shiftX/10) + 'px'});
-                $('#image2').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/12) + 'px'});
-                $('#image3').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/15) + 'px'});
-                $('#image4').css({ 'left': (startX-($('#index').width()*0.075)) + (shiftX/20) + 'px'});
-              
-//              leftX = (totalX / 2)
-//              rightX = (totalX / 2) - totalX
-//              $('#image1').css('z-index');
-//              $('#image1').addClass('imageTranslate');
-//              $('#image1').css({
-//                  'transform': 'translate('+(leftX/10)+'px,0)',
-//    '-webkit-transform' : 'translate('+(leftX/10)+'px,0)',
-//    '-o-transform': 'translate('+(leftX/10)+'px,0)',
-//    '-moz-transform': 'translate('+(leftX/10)+'px,0)'
-//              });
-              
-              
 //                $('#image1').css({ 'left': startX + (shiftX/10) + 'px'});
 //                $('#image2').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/12) + 'px'});
 //                $('#image3').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/15) + 'px'});
 //                $('#image4').css({ 'left': (startX-($('#index').width()*0.075)) + (shiftX/20) + 'px'});
 //              
-              
-//            };
-                });
+////              leftX = (totalX / 2)
+////              rightX = (totalX / 2) - totalX
+////              $('#image1').css('z-index');
+////              $('#image1').addClass('imageTranslate');
+////              $('#image1').css({
+////                  'transform': 'translate('+(leftX/10)+'px,0)',
+////    '-webkit-transform' : 'translate('+(leftX/10)+'px,0)',
+////    '-o-transform': 'translate('+(leftX/10)+'px,0)',
+////    '-moz-transform': 'translate('+(leftX/10)+'px,0)'
+////              });
+//              
+//              
+////                $('#image1').css({ 'left': startX + (shiftX/10) + 'px'});
+////                $('#image2').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/12) + 'px'});
+////                $('#image3').css({ 'left': (startX+($('#index').width()*0.075)) + (shiftX/15) + 'px'});
+////                $('#image4').css({ 'left': (startX-($('#index').width()*0.075)) + (shiftX/20) + 'px'});
+////              
+//              
+////            };
+//                });
         });
         
 //        animateIndexPage();
 //
 //});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+    var newq = [startX, startY - 100];//makeNewPosition();
+    
+    
+    $('#image1').velocity({ top: startY, left: start1 - 75}, 5000, function(){
+            
+    });
+    
+    $('#image2').velocity({ top: startY, left: start2 - 100}, 5000, function(){
+      
+    });
+    
+    $('#image3').velocity({ top: startY, left: start3 - 50}, 5000, function(){
+      
+    });
+    
+    $('#image4').velocity({ top: startY, left: start4 - 125}, 5000, function(){
+      animateDiv1();        
+    });
+    
+};
+
+function animateDiv1(){
+    var newq = [startX, startY];//makeNewPosition();
+    $('#image1').velocity({ top: startY, left: start1}, 5000, function(){
+            
+    });
+    $('#image2').velocity({ top: startY, left: start2}, 5000, function(){
+            
+    });
+    $('#image3').velocity({ top: startY, left: start3}, 5000, function(){
+            
+    });
+    $('#image4').velocity({ top: startY, left: start4}, 5000, function(){
+      animateDiv();        
+    });
+    
+};
+
 
         var limit = document.body.scrollHeight;
         var winHeight=window.innerHeight;
@@ -318,15 +387,15 @@ $(document).ready(function() {
 
     $('.filter').on('mousedown touchstart', function() {
         
-    
-    if (!active1) $(this).find('.test1').css({'background-color': 'rgba(22,28,29,0.7)', 'transform': 'translate(160px,-15px)'});
-    else $(this).find('.test1').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'none'}); 
-     if (!active2) $(this).find('.test2').css({'background-color': 'rgba(22,28,29,0.7)', 'transform': 'translate(137px,75px)'});
-    else $(this).find('.test2').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'none'});
-      if (!active3) $(this).find('.test3').css({'background-color': 'rgba(22,28,29,0.7)', 'transform': 'translate(71px, 139px)'});
-    else $(this).find('.test3').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'none'});
-      if (!active4) $(this).find('.test4').css({'background-color': 'rgba(22,28,29,0.7)', 'transform': 'translate(-20px,160px)'});
-    else $(this).find('.test4').css({'background-color': 'rgba(22,28,29,0.9)', 'transform': 'none'});
+//    $(this).velocity({height: '120px', width: '120 px'});
+    if (!active1) $(this).find('.test1').css({'background-color': 'rgba(68, 176, 213,0.7)', 'transform': 'translate(160px,-15px)'});
+    else $(this).find('.test1').css({'background-color': 'rgba(68, 176, 213,0.9)', 'transform': 'none'}); 
+     if (!active2) $(this).find('.test2').css({'background-color': 'rgba(68, 176, 213,0.7)', 'transform': 'translate(137px,75px)'});
+    else $(this).find('.test2').css({'background-color': 'rgba(68, 176, 213,0.9)', 'transform': 'none'});
+      if (!active3) $(this).find('.test3').css({'background-color': 'rgba(68, 176, 213,0.7)', 'transform': 'translate(71px, 139px)'});
+    else $(this).find('.test3').css({'background-color': 'rgba(68, 176, 213,0.9)', 'transform': 'none'});
+      if (!active4) $(this).find('.test4').css({'background-color': 'rgba(68, 176, 213,0.7)', 'transform': 'translate(-20px,160px)'});
+    else $(this).find('.test4').css({'background-color': 'rgba(68, 176, 213,0.9)', 'transform': 'none'});
     active1 = !active1;
     active2 = !active2;
     active3 = !active3;
@@ -337,11 +406,11 @@ $(document).ready(function() {
 
 for(i=1;i<=4;i++){
 $(".test"+i).hover(function(){
- $(this).css("background-color", "rgba(42,121,134,0.7)");
+ $(this).css("background-color", "rgba(68, 176, 213,1.0)");
 //    $(this).css("transition-delay","0s");
 //    $(this).css('testHover');
     }, function(){
-    $(this).css("background-color", "rgba(22,28,29,0.7)");
+    $(this).css("background-color", "rgba(68, 176, 213,0.7)");
 });
 }
 
@@ -353,8 +422,9 @@ $(".test"+i).hover(function(){
 
 $(".mask2").hover(function(){
     $(this).css("background-color", "#268b9b");
+//    $(this).velocity({ scale: "1.5"}, 150);
     }, function(){
-    $(this).css("background-color", "#289caf");
+    $(this).css("background-color", "#218291");
 });
 
 
@@ -390,9 +460,9 @@ function showExperience(){
     if($("#devCards").is(":visible")){
        $( "#devCards" ).hide();
     }
-    if($("#devCards1").is(":visible")){
-       $( "#devCards1" ).hide();
-    }
+    
+    $( "#devCards1" ).show();
+        $("#devCards1").animateCss('bounceIn');
    
 }
 
@@ -437,10 +507,12 @@ function showDev(){
     if($("#designCards2").is(":visible")){
         $( "#designCards2" ).hide();
     }
+    if($("#devCards1").is(":visible")){
+        $( "#devCards1" ).hide();
+    }
        $( "#devCards" ).show();
         $("#devCards").animateCss('bounceIn');
-    $( "#devCards1" ).show();
-        $("#devCards1").animateCss('bounceIn');
+    
 }
 
 
