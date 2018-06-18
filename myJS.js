@@ -386,6 +386,7 @@ $(document).ready(function() {
   var active4 = false;
 
     $('.filter').on('mousedown touchstart', function() {
+         ga('send', 'event', 'Filter', 'click', 'filterOpen');
         
 //    $(this).velocity({height: '120px', width: '120 px'});
     if (!active1) $(this).find('.test1').css({'background-color': 'rgba(68, 176, 213,0.7)', 'transform': 'translate(160px,-15px)'});
@@ -440,6 +441,7 @@ $.fn.extend({
 
 
 function showExperience(){
+    ga('send', 'event', 'Filter', 'filter', 'showExp');
      $('html,body').animate({
         scrollTop: $("#slide-10").offset().top},
         'slow');
@@ -468,6 +470,7 @@ function showExperience(){
 
 
 function showDesign(){
+    ga('send', 'event', 'Filter', 'filter', 'showDesign');
     $('html,body').animate({
         scrollTop: $("#slide-10").offset().top},
         'slow');
@@ -490,6 +493,7 @@ function showDesign(){
 }
 
 function showDev(){
+    ga('send', 'event', 'Filter', 'filter', 'showDev');
     $('html,body').animate({
         scrollTop: $("#slide-10").offset().top},
         'slow');
@@ -533,6 +537,7 @@ function showAllCards(){
 }
 
 function showAll(){
+    ga('send', 'event', 'Filter', 'filter', 'showAll');
     $('html,body').animate({
         scrollTop: $("#slide-10").offset().top},
         'slow');
