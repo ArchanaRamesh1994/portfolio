@@ -1,0 +1,658 @@
+@font-face {
+        font-family: "mission";
+        src: url("../fonts/Mission-Script.otf");
+}
+
+.text{
+    font-size: 13px;
+}
+
+.SectionTitle{
+    font-family: "mission";
+    font-size: 50px;
+}
+
+.align-middle10{
+    margin-top: 10px;
+}
+
+.align-middle20{
+    margin-top: 20px;
+}
+
+.align-middle30{
+    margin-top: 30px;
+}
+
+.align-middle40{
+    margin-top: 40px;
+}
+
+.align-middle50{
+    margin-top: 50px;
+}
+
+.align-middle60{
+    margin-top: 60px;
+}
+
+.align-middle70{
+    margin-top: 70px;
+}
+
+.align-middle80{
+    margin-top: 80px;
+}
+
+.align-middle90{
+    margin-top: 90px;
+}
+
+.align-middle100{
+    margin-top: 100px;
+}
+
+.align-middle150{
+    margin-top: 150px;
+}
+
+.align-middle200{
+    margin-top: 200px;
+}
+
+
+.ModalSubTitle{
+    font-family: "mission";
+    margin-left: 10px;
+    font-size:40px;
+}
+.imageSubTitle{
+    text-align: center;
+    margin-left: -5%;
+    margin-top: 1%;
+    font-size: 15px;
+}
+#loader {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      margin: 0;
+    z-index: 99999;
+    position: fixed;
+    
+    text-align: center;
+}
+
+#loaderGif{
+    visibility: hidden;
+    -webkit-animation-duration: 1s;
+    margin: auto;
+    top: 30%;
+    display: block;
+}
+
+#loaderText{
+    visibility: hidden;
+    font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		font-size: 20px;
+		font-weight: 800;
+}
+
+.linkWeb{
+    color:#2A3354;
+    
+}
+
+#index { height: 100%; width:100%; max-width: 100%;
+}
+    #image1 {display: inline; z-index: 6; width: 100%; position: absolute;}
+    #image2 {display: inline;  z-index : 5; width: 100%; right:-5%; position: absolute;}
+    #image3 {display: inline;  z-index: 4; width: 100%; right:-5%; position: absolute;}
+    #image4 {display: inline;  z-index: 3; width: 100%; left:-5%; position: absolute;}
+    #imageBG {display: inline;  z-index: 2; width: 100%; position: absolute;}
+    #imageInvi {display: inline;  width:100%; }
+
+.imageTranslate {
+  -webkit-transition: 10s;
+  -moz-transition: 10s;
+  -ms-transition: 10s;
+  -o-transition: 10s;
+  transition: 10s;
+  margin-left: -10% !important;
+}
+
+    #imageInvi-sm { display: none;}
+#MainText-sm {display: none;}
+    #MainText { 
+        z-index: 7;
+        left:5%;
+        font-size:  7vw;
+        font-weight: 900;
+        width:50%;
+        margin-top: 10%;
+        position: absolute; 
+         font-family: "mission";
+    }
+#MainSubText { 
+        position: absolute; 
+        z-index: 7;
+        left:5%;
+        font-size:  1.7vw;
+        width:50%;
+    margin-top: 18%;
+    }
+
+#aboutMe{
+    margin: auto;
+    font-size:20px;
+    width:75%;
+    text-align: center;
+}
+
+.divCenter{
+    text-align: center;
+}
+
+
+
+#circle1,#circle2,#circle3,#circle4 {
+    display: inline-block;
+  margin: 20px;
+  width: 175px;
+  height: 175px;
+    font-size: 20px;
+}
+
+
+
+.cardFrontImg {
+    width: 75%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.cardImgContainer{
+    height: 60%;
+}
+#pearIt{
+    width: 80%;
+    margin-top: 5%;
+}
+.cardBackImg {
+    width: 50%;
+}
+
+.backCardText {
+    margin: 2%;
+}
+
+.projImg{
+    width: 80%;
+}
+
+#skillDiv {
+    width: 90%;
+}
+
+.portfolio-link, .portfolio-span { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+  background-image: url('../images/empty.png');
+}
+
+.modalTitleImg {
+    width: 15%;
+}
+
+#ModalTitleIntern {
+    width: 25%;
+}
+
+.ModalTitle {
+    font-family: "mission";
+    font-style: bold;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.ModalLocation{
+    float: left;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 2%;
+}
+.ModalDuration{
+    float: right;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 2%;
+}
+.modal-body hr {
+        margin-top: 0px;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.ModalList{
+    text-align: center
+}
+.modal-body li {
+    text-align: left;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+.modalImg {
+    width: 90%;
+}
+.modalImg2{
+    width: 100%;
+}
+.ModalText {
+    text-align: left;
+    font-size: 20px;
+}
+
+.ModalLeft {
+    float: left;
+    width:45%;
+/*    clear:both;*/
+}
+
+.ModalLeftText {
+    text-align: left;
+    font-size: 20px;
+}
+
+.ModalXLeftText {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.ModalSpace{
+    margin-bottom: 50px;
+}
+
+.ModalRight {
+    float: right;
+    width:45%;
+}
+
+#EZTitle {
+    width: 30%;
+}
+
+#BangTitleImg {
+    width: 20%;
+}
+
+#PullTitleImg {
+    width: 30%;
+}
+
+.li-Xleft li {
+    margin-left: 5%;
+}
+
+.vertical-align {
+    margin-top:30%;
+}
+
+
+@media (max-width: 767px) {
+    #imageInvi-sm {display: inline;  width:100%; }
+
+#image1 { display: none;}
+    #image2 { display: none;}
+    #image3 { display: none;}
+    #image4 { display: none;}
+    #imageBG { display: none;}
+    #imageInvi { display: none;}
+    #MainText {display: none;}
+    #MainSubText {display: none;}
+    
+    #MainText-sm { 
+        display: inline;
+        z-index: 7;
+        left:10%;
+        font-size:  15vw;
+        font-weight: 900;
+        margin-top: 55vh;
+        position: absolute; 
+        line-height: 100%;
+    }
+#MainSubText-sm {
+    
+margin-top: 3vw;
+    line-height: 150%;
+    font-weight: 500;
+        font-size:  7vw;
+    text-align: left;
+    }
+}
+
+.iconPhone {
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/phone.png");
+      margin: auto;
+}
+
+.iconEmail {
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/email.png");
+    margin: auto;
+}
+
+.txtcntr{
+    text-align: left;
+}
+
+.toggler {
+    width: 500px;
+    height: 200px;
+    
+  }
+  #button {
+    padding: .5em 1em;
+    text-decoration: none;
+  }
+  #effect {
+    position: relative;
+    width: 240px;
+    height: 170px;
+    padding: 0.4em;
+  }
+  #effect h3 {
+    margin: 0;
+    padding: 0.4em;
+    text-align: center;
+  }
+
+
+#togglerSection {
+    margin: auto;
+    width: 75%;
+}
+
+#WorkTitle {
+    float: right;
+    width: 80%;
+ padding-top: 90px;  
+}
+
+#WorkSpace {
+    right: 13%;
+}
+.circleImages{
+    height: 30px;
+    width: 30px;
+    display: block;
+    left:30px;
+    top:20px;
+}
+
+.circleImagesMask{
+    height: 36px;
+    width: 36px;
+    display: block;
+    left:32px;
+    top:20px;
+}
+
+.circleImagesMaskUp{
+    height: 36px;
+    width: 36px;
+    display: block;
+    left:32px;
+    top:10px;
+}
+
+.circleImagesUp{
+    height: 30px;
+    width: 30px;
+    display: block;
+    left:30px;
+    top:10px;
+}
+
+
+.filter {
+    
+    font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     top: 10%;
+	position: sticky;
+	right: 0%;
+	z-index: 7;
+    float:left;
+    padding: 0;
+    margin: 0;
+    margin-top: 7%;
+    margin-left: 3%;
+    
+ display:block;
+  width:100px;
+  height:100px;
+  background-color:transparent;
+  border-radius:50%;
+  z-index:20;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    
+}
+@-moz-document url-prefix(){
+    .filter {
+        position: relative;
+    }
+}
+.test1 {
+  width:90%;
+  height:90%;
+    background-color:rgba(42, 168, 187,0.7);
+  border-radius:50%;
+  position:absolute;
+  color:white;
+  text-align:center;
+    top:5%;
+  left:5%;
+  z-index:19;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    position:absolute;
+    cursor:pointer;
+    line-height:70px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.test2 {
+  width:90%;
+  height:90%;
+    background-color:rgba(22,28,29,0.7);
+  border-radius:50%;
+  position:absolute;
+  color:white;
+  text-align:center;
+top:5%;
+  left:5%;
+    z-index:19;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+    cursor:pointer;
+    line-height:15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.test3 {
+  width:90%;
+  height:90%;
+    background-color:rgba(22,28,29,0.7);
+  border-radius:50%;
+  position:absolute;
+  color:white;
+  text-align:center;
+top:5%;
+  left:5%;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;  
+    cursor:pointer;
+    line-height:15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+  .test4 {
+      margin: auto;
+  width:90%;
+  height:90%;
+    background-color:rgba(22,28,29,0.7);
+  border-radius:50%;
+  position:absolute;
+  color:white;
+  text-align:center;
+top:5%;
+  left:5%;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;  
+      cursor:pointer;
+      line-height:50px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.testHover{
+    background-color: green;
+}
+
+.mask2 {
+     top: 0%;
+	right: 0%;
+	z-index: 7;
+    float:right;
+    padding: 0;
+    margin: 0;
+    
+  width:100px;
+  height:100px;
+  background:#218291;
+  border-radius:50%;
+  z-index:21;
+  color:white;
+  text-align:center;
+  
+  cursor:pointer;
+    line-height:70px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.readMore{
+    color: #1a5a65;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-resume {
+  color: #ffffff;
+  background-color: #289caf;
+  border-color: #289caf;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border-width: 3px;
+    margin: auto;
+}
+.btn-resume:hover {
+  color: #ffffff;
+  background-color: #2b8594;
+  border-color: #2b8594;
+}
+
+
+.reportButton{
+    width: 100px;
+    height: 120px;
+    background-size: 100% 100%;
+    
+    margin: auto;
+}
+
+.webButton{
+    text-align: center;
+}
+
+#webImg:hover{
+    content:url("../images/web_button_hover.png");
+}
+
+
+.repB{
+    width:100%;
+}
+
+.repBA{
+    color:#2b8594;
+}
+
+.repBDiv{
+    cursor: pointer;
+}
+
+.skilled hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 335px) {
+    
+    #MainText-sm { 
+     
+        margin-top: 55vh;
+    }
+#MainSubText-sm {
+    margin-top: 75vh;
+    }
+}
+
+@media (max-width: 992px) {
+    #togglerSection{
+        top: 300px;
+        padding-bottom: 300px;
+    }
+    
+    .card-container{
+        width: xpx;
+ margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1240px) {
+    #togglerSection{
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .devContainerR{
+         width: xpx;
+ margin: auto auto auto 0;
+    }
+    
+    .devContainerL{
+         width: xpx;
+        margin: auto 0 auto auto;
+    }
+}
+
+.imgBorder{border-style: solid; border-width:1px;}
