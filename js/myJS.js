@@ -315,6 +315,9 @@ function showExperience(){
          $("#expCards").show();
         $("#expCards").animateCss('bounceIn');
     
+    $("#expCards1").show();
+        $("#expCards1").animateCss('bounceIn');
+    
     if($("#designCards1").is(":visible")){
         $( "#designCards1" ).hide();
     }
@@ -325,8 +328,8 @@ function showExperience(){
        $( "#devCards" ).hide();
     }
     
-    $( "#devCards1" ).show();
-        $("#devCards1").animateCss('bounceIn');
+    $( "#devCards2" ).show();
+        $("#devCards2").animateCss('bounceIn');
    
 }
 
@@ -341,6 +344,9 @@ function showDesign(){
     $(".mask2").css("font-size","14px");
     if($("#expCards").is(":visible")){
         $( "#expCards" ).hide();
+    }
+    if($("#expCards2").is(":visible")){
+        $( "#expCards2" ).hide();
     }
     $( "#designCards1" ).show();
         $("#designCards1").animateCss('bounceIn');
@@ -367,6 +373,9 @@ function showDev(){
     if($("#expCards").is(":visible")){
         $( "#expCards" ).hide();
     }
+    if($("#expCards2").is(":visible")){
+        $( "#expCards2" ).hide();
+    }
     if($("#designCards1").is(":visible")){
         $( "#designCards1" ).hide();
     }
@@ -384,6 +393,8 @@ function showDev(){
 function showAllCards(){
         $( "#expCards" ).show();
         $("#expCards").animateCss('bounceIn');
+    $( "#expCards2" ).show();
+        $("#expCards2").animateCss('bounceIn');
         $( "#designCards1" ).show();
         $("#designCards1").animateCss('bounceIn');
         $( "#designCards2" ).show();
@@ -439,6 +450,7 @@ $("#slide-10").css("background-size", $("#slide-10").width() +"px "+($("#slide-1
 $("#slide-10").css("background-position", "left top");
 $(".filter").hide();
 $("#expCards").hide();
+$("#expCards2").hide();
 $("#designCards1").hide();
 $("#designCards2").hide();
 $("#devCards").hide();

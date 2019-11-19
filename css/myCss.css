@@ -153,7 +153,24 @@
     text-align: center;
 }
 
+.emailLink:link {
+  color: #01B2FE;
+}
 
+/* visited link */
+.emailLink:visited {
+  color: #01B2FE;
+}
+
+/* mouse over link */
+.emailLink:hover {
+  color: #01B2FE;
+}
+
+/* selected link */
+.emailLink:active {
+  color: #01B2FE;
+}
 
 #circle1,#circle2,#circle3,#circle4 {
     display: inline-block;
