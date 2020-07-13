@@ -145,20 +145,20 @@ var bar3 = new ProgressBar.Circle(circle3, {
   }
 });
                     
-var bar4 = new ProgressBar.Circle(circle4, {
-  color: '#ffb400',
-  trailColor: '#eee',
-  trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
-  strokeWidth: 6,
-  from: {color: '#ffffff', a:0},
-  to: {color: '#ffb400', a:1},
-  step: function(state4, circle4) {
-    circle4.path.setAttribute('stroke', state4.color);
-      circle4.setText("Learning");
-  }
-});
+//var bar4 = new ProgressBar.Circle(circle4, {
+//  color: '#ffb400',
+//  trailColor: '#eee',
+//  trailWidth: 1,
+//  duration: 1400,
+//  easing: 'bounce',
+//  strokeWidth: 6,
+//  from: {color: '#ffffff', a:0},
+//  to: {color: '#ffb400', a:1},
+//  step: function(state4, circle4) {
+//    circle4.path.setAttribute('stroke', state4.color);
+//      circle4.setText("Learning");
+//  }
+//});
 
 flagAnimate1 = false;
 flagAnimate2 = false;
@@ -179,7 +179,7 @@ flagAnimateCards = false;
         var position1 = getPosition(circle1);
         var position2 = getPosition(circle2);
         var position3 = getPosition(circle3);
-        var position4 = getPosition(circle4);
+//        var position4 = getPosition(circle4);
         var positionCards = getPosition(document.getElementById("togglerSection"));
 
         if((parseInt(position1.y)+200)<parseInt(winHeight)){
@@ -205,13 +205,13 @@ flagAnimateCards = false;
             flagAnimate3 = true;
         }
       
-     if((parseInt(position4.y)+200)<parseInt(winHeight)){
-         if(!flagAnimate4)
-            {
-                bar4.animate(0.4);
-            }
-            flagAnimate4 = true;
-        }
+//     if((parseInt(position4.y)+200)<parseInt(winHeight)){
+//         if(!flagAnimate4)
+//            {
+//                bar4.animate(0.4);
+//            }
+//            flagAnimate4 = true;
+//        }
      
      if((parseInt(positionCards.y)+400)<parseInt(winHeight)){
          if(!flagAnimateCards)
@@ -521,3 +521,11 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+//refresh page on browser resize
+$(window).bind('resize', function(e)
+{
+  console.log('window resized..');
+  this.location.reload(false); /* false to get page from cache */
+  /* true to fetch page from server */
+});

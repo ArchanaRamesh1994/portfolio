@@ -169,7 +169,7 @@ body {
 	}
 	
 	.icon {
-		margin-right: 12px;
+		margin-right: 20px;
 	}
 			
 	.nav li[data-slide="1"],
@@ -284,6 +284,12 @@ body {
 		margin: 0 auto;
 		width: 33%;
 	}
+
+@media (max-width: 767px) {
+	.line-row {
+		margin-top: 35px;
+	}
+}
 	
 	.subtitle-row {
 		font-size: 35px;
