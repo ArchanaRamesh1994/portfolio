@@ -60,12 +60,27 @@
     margin-top: 200px;
 }
 
+.imageModalInline{
+    text-align: center;
+    width: 100%;
+}
+
+.imageModalWidth80 {
+    width: 80%;
+}
 
 .ModalSubTitle{
     font-family: "mission";
     margin-left: 10px;
     font-size:40px;
 }
+
+.ModalSubTitle2{
+    font-family: "mission";
+    margin-left: 10px;
+    font-size:32px;
+}
+
 .imageSubTitle{
     text-align: center;
     margin-left: -5%;
